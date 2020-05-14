@@ -77,8 +77,8 @@ The collision detection function has been used, so the ball bounces back from th
 * **score** - the number changes when the player/opponent scores a point. Different colors been used to show either player's or opponent's number of points. 
 
 ## Features to be implemented in the future
-
-## Bugs 
+1. I would like to add player's statistics by displaying the number of wins/defeats and points scored in total. This would be built into a leader's board available
+once clicked on the button/tab called **Check The Leaderboard**.
 
 ## Technologies used 
 
