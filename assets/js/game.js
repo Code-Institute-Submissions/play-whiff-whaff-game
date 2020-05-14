@@ -141,9 +141,9 @@ function update() {
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
-// ADDING BASIC AI TO CONTROL COM MOVEMENT
-    let computerLevel = 0.1;
-    opponent.y += (ball.y - (opponent.y + opponent.height/2)) * computerLevel;
+// ADDING BASIC AI TO CONTROL OPPONENT MOVEMENT
+    let opponentLevel = 0.1;
+    opponent.y += (ball.y - (opponent.y + opponent.height/2)) * opponentLevel;
 
     if(ball.y + ball.radius > cvs.height || ball.y - ball.radius < 0) {
         ball.velocityY = -ball.velocityY;
@@ -153,15 +153,53 @@ function update() {
     let player = (ball.x < cvs.width/2) ? racketOne : opponent;
 
     if(detectionWalls(ball, player)){
-        ball.velocityX = -ball.velocityX;
-    }
+        let collidePoint = ball.y - (player.y + player.height/2);
+
+        collidePoint = collidePoint/(player.height/2);
+
+// CALCULATING ANGLE IN RADIAN
+        let angleRad = collidePoint * Math.PI/4;
+
+// DIRECTING THE BALL WHEN IT IS HIT
+        let direction = (ball.x < cvs.width/2) ? 1 : -1;
+
+// CHANGING VELOCITY X & Y 
+        ball.velocityX = direction * ball.speed * Math.cos(angleRad);
+        ball.velocityY = ball.speed * Math.sin(angleRad);
+
+// INCREASING THE SPEED OF THE BALL ONCE HIT BY PLAYER/OPPONENT
+        ball.speed += 0.5;
+    };
+// UPDATING THE SCORE 
+    if(ball.x - ball.radius < 0) {
+
+// THE OPPONENT SCORES 
+        opponent.score++;
+        resetBall();
+    }else if(ball.x + ball.radius > cvs.width) {
+        racketOne.score++;
+        resetBall();
+    };
+
 };
 
-function game() {
+// CREATING RESET BALL FUNCTION 
+function resetBall() {
+        ball.x = cvs.width/2;
+        ball.y = cvs.height/2;
+
+        ball.speed = 5;
+        ball.velocityX = -ball.velocityX;
+
+};
+
+
+// CREATING FUNCTION WHICH WILL CALL BOTH RENDER & UPDATE FUNCTION
+function gameBoard() {
     render();
     update();
 };
 
 const framePerSecond = 50;
-setInterval(game, 1000/framePerSecond);
+setInterval(gameBoard, 1000/framePerSecond);
 
