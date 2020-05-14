@@ -106,6 +106,17 @@ function render() {
 
 };
 
+// INITIATING USER CONTROLS BY ADDING EVENT LISTENER 
+cvs.addEventListener('mousemove', controlMove);
+
+// CREATING FUNCTION TO CONTROL THE PLAYER MOVES 
+function controlMove(e) {
+
+// DECLARING VARIABLE RECT TO GET TO TOP OF THE CANVAS
+    let rect = cvs.getBoundingClientRect();
+    racketOne.y = e.clientY - rect.top - racketOne.height/2;
+};
+
 // CREATING COLLISION DETECTION FUNCTION
 function detectionWalls(b, p) {
     b.top = b.y - b.radius;
@@ -131,6 +142,13 @@ function update() {
 
     if(ball.y + ball.radius > cvs.height || ball.y < ball.radius < 0) {
         ball.velocityY = -ball.velocityY;
+    };
+
+// ADDING VARIABLE TO DETERMINE WHO HITS THE BALL 
+    let player = (ball.x < cvs.width/2) ? racketOne : opponent;
+
+    if(detectionWalls(ball, player)){
+
     };
 };
 
