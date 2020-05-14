@@ -41,6 +41,7 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
 *   *fonts*
     * a single-type of font has been used to keep the text consistent through the website content
 
+        <img src="assets/images/colors/text.png" alt="text">
 
 
     
@@ -54,6 +55,7 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
     * As a new visitor, I want to connect with the website's host using the available social-media links;
 
 ## Wireframes
+[**GAME**]()
 
 ## Features
 
