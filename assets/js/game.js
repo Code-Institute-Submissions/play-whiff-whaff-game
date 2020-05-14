@@ -106,8 +106,26 @@ function render() {
 
 };
 
+// CREATING COLLISION DETECTION FUNCTION
+function detectionWalls(b, p) {
+    b.top = b.y - b.radius;
+    b.bottom = b.y + b.radius;
+    b.left = b.x - b.radius;
+    b.right = b.x + b.radius;
+
+    p.top = p.y;
+    p.bottom = p.y + p.height;
+    p.left = p.x;
+    p.right = p.x + p.width;
+
+    return b.right > p.left && b.bottom > p.top && b.left < p.right && b.top < p.bottom;
+
+};
+
 // CREATING FUNCTION WHICH WILL UPDATE POSITION/MOVEMENT & SCORE 
 function update() {
+
+// INITIATING BALL MOVEMENT
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
