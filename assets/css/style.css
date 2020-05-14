@@ -1,0 +1,15 @@
+/*IMPORTING FONTS STYLE*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #c2fe55;
+    font-family: 'Inconsolata', monospace;
+    color: #ea4d06;
+    min-height: 100vh;
+    margin: 0
+}
