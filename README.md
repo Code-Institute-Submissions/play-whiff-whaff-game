@@ -150,6 +150,22 @@ You can clone the project from **GitHub** using the following process:
 
 * follow the link to the [**repository project**](https://github.com/KrisK1978/play-whiff-whaff-game)
 
+* use **Clone or download** button and copy the clone URL `https://github.com/KrisK1978/play-whiff-whaff-game.git`
+from **Clone with HTTPs** for the repository
+
+* go to your local **IDE** and open a new command line - terminal
+
+* change the current working directory to the location where you want the cloned directory to be made 
+
+* type the **git clone** command and paste the **URL** you already copied 
+
+* click **Enter** and your local clone will be created 
+
+You can find more information about **cloning**/**troubleshooting** using the following [**link**](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+
+
+
 ## Credits 
 
 ### Content
