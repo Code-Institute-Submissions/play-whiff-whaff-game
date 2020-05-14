@@ -1,4 +1,6 @@
-**Ping - Pong** also known as **Whiff-Whaff** is a table tennis game where two or four players hit a lightweight ball back an forth across a table divided with a net. Players use small rackets and must allow a ball played toward them to bounce one time on their side of the table. They must hit it back to the opposite side. The point is scored when the player fails to return the ball. It seems to be an easy game, but **Ping-Pong** is considered as a fast-paced challenge and requires quick reactions. 
+**Ping - Pong** also known as **Whiff-Whaff** is a table tennis game where two or four players hit a lightweight ball back an forth across a table divided with a net. 
+Players use small rackets and must allow a ball played toward them to bounce one time on their side of the table. They must hit it back to the opposite side. 
+The point is scored when the player fails to return the ball. It seems to be an easy game, but **Ping-Pong** is considered as a fast-paced challenge and requires quick reactions. 
 
 ## Demo 
 The website demo can be found [**here**](https://krisk1978.github.io/play-whiff-whaff-game/).
@@ -173,7 +175,7 @@ You can find more information about **cloning**/**troubleshooting** using the fo
 The content of the website was written by me. 
 
 ### Media
-I used the following platforms to help designing, creating and completing the project:
+I used the following platforms to help to understand, plan, design and create part of the project.
 * [**Traversy Media**](https://www.traversymedia.com/)
 
 * [**Code Explained**](https://www.codeexplained.org/)
@@ -184,6 +186,12 @@ I used the following platforms to help designing, creating and completing the pr
 
 
 ## Acknowledgements 
+I received a motivation and inspiration for this project from my children who like to play Arcade games requiring quick decisions and 
+fast-paced reactions. They asked me if I could build a simple game, so they can check their ability to make quick moves and simply to 
+have some fun. 
+
+Completing this project would not be possible without my mentor [**Simen Daehlin**](https://github.com/Eventyret). His support and advice 
+was extremely helpful. I also used the [**Slack**](https://slack.com/intl/en-gb/) community channels to exchange views and experience.
 
 ## Disclaimer 
 
