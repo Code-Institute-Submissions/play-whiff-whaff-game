@@ -19,12 +19,25 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
 *   *background*
     * applied vidid colors to the project elements to make it *'eye-catching'*
             
-        * **body**                              
-            <img src="assets/images/colors/body.png">
-        * **canvas** 
-            <img src="assets/images/colors/canvas.png">
+        * **body**    
 
+        <img src="assets/images/colors/body.png" alt="body">
+       
+        * **canvas**  
 
+        <img src="assets/images/colors/canvas.png" alt="canvas">
+
+        * **game elements (players/net/ball) - other colors used**
+
+        <img src="assets/images/colors/player.png" alt="player">
+
+        <img src="assets/images/colors/opponent.png" alt="opponent">
+
+        <img src="assets/images/colors/net.png" alt="net">
+
+        <img src="assets/images/colors/ball.png" alt="ball">
+
+        
 *   *fonts*
     * a single-type of font has been used to keep the text consistent through the website content
 
