@@ -17,3 +17,47 @@ body {
 #gameCanvas {
     border: 10px solid #ff489f;
 }
+
+
+
+/*APPLYING STYLE TO SOCIAL LINKS ICONS*/
+
+.social-links {
+  display: list-item;
+}
+
+.social-links i {
+    font-size: 20px;
+    border: 3px solid #641220;
+    color: #e71d36;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 3px;
+    -webkit-box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+    transition: all .4s ease-in-out;
+   -moz-transition: all .4s ease-in-out;
+   -webkit-transition: all .4s ease-in-out;
+   -o-transition: all .4s ease-in-out;
+}
+
+/*APPLYING INDIVIDUAL COLOR TO SOCIAL MEDIA LINKS ICONS WHEN USING HOVER*/
+.fa-linkedin:hover,
+.fa-github-square:hover,
+.fa-instagram:hover,
+.fa-twitter-square:hover {
+    background-color: #27ffd5;
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
+  
+}
+
+/*COPYRIGHT TEXT STYLING*/
+.copyright {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #271196;
+   
+}
