@@ -66,4 +66,16 @@ function drawText(text, x, y, color) {
     ctx.fillText(text, x, y);
 };
 
+// CREATING FUNCTION TO DRAW A PLAYER1
+function drawRacketOne() {
+    ctx.fillStyle = racketOne.color;
+    ctx.fillRect(racketOne.x, racketOne.y, racketOne.width, racketOne.height);
+};
+
+// CREATING FUNCTION TO DRAW THE OPPONENT
+function drawOpponent() {
+    ctx.fillStyle = opponent.color;
+    ctx.fillRect(opponent.x, opponent.y, opponent.width, opponent.height);
+};
+
 drawText('Hello', 300, 200, '#fdfffc');
