@@ -81,8 +81,44 @@ The collision detection function has been used, so the ball bounces back from th
 once clicked on the button/tab called **Check The Leaderboard**.
 
 ## Technologies used 
+I have used the following technologies to complete the project:
+1. ### HTML
+    * to define the properties and behaviours of the website content
+
+2. ### CSS 
+    * to decribe how HTML elements should be displayed on the screen 
+
+3. ### [Bootswatch](https://bootswatch.com/)
+    * to make sure the website is user friendly and responsive
+
+4. ### [Font Awesome](https://fontawesome.com/)
+    * to give a high-quality iconography on every device 
+
+5. ### [Google Fonts](https://fonts.google.com/)
+    * to style the website fonts
+
+6. ### [Favicon](https://www.favicon-generator.org/)
+    * to generate an icon which will be associated with the website
+
+6. ### Popper.js 
+    * to calculate the element's position 
+
+7. ### JavaScript 
+    * *jQuery*: to simplify HTML DOM Tree traversal and manipulation
+
+    * *game.js*: to render the canvas context and 2d shapes and allow 
+    the website user to play a round of **Whiff-Whaff** game 
 
 ## Other external support used to build the project
+
+1. [**Am I Responsive?**](http://ami.responsivedesign.is/)
+    * to check the website responsiveness 
+
+2. [**JS Hint**](https://jshint.com/)
+    * to detect errors and potential problems in JavaScript
+
+3. [**Code Explained**](https://www.codeexplained.org/)
+    * to create the **Ping-Pong** game and understand the logic of JavaScript functions
 
 ## Project Testing
 
