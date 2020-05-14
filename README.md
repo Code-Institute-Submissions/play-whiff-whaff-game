@@ -44,8 +44,6 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
         <img src="assets/images/colors/text.png" alt="text">
 
 
-    
-
 
 ## User Stories 
 1. User's expectations:
@@ -58,6 +56,25 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
 [**GAME**]()
 
 ## Features
+1. The main section contains intro text ('Welcome to the World of Arcade Games!'). The background-color has been applied
+to the body's element, to make it 'eye-catching'.
+
+2. The canvas element has been used to build the game board and to render 2D shapes. The game board features the following elements:
+
+* **playfield** element built using draw methods. It is divided in two fields by a net which helps to see the *player* (left side) and the *opponent* 
+(computer - right side) locations;
+
+* **players** created using one of the canvas draw methods with different colors applied, so the players can be 
+easily recognised. Both player/opponent can move up and down to be able to hit the ball. Basic AI function has been added to control the 
+opponent's (computer) movement. 
+
+* **net** built using a canvas draw method with a vivid color applied to show player's and opponent's side of the playfield.
+
+* **ball** created using a draw method which moves from one side of the playfield to another when the player or the opponent bounces it back.
+The ball's speed depends on the number of hits. If the number of player's hits increases the ball's speed increments too.
+The collision detection function has been used, so the ball bounces back from the wall (if hit by a player/opponent) within playfield area. 
+
+* **score** - the number changes when the player/opponent scores a point. Different colors been used to show either player's or opponent's number of points. 
 
 ## Features to be implemented in the future
 
