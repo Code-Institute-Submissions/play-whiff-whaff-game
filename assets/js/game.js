@@ -106,9 +106,22 @@ function render() {
 
 };
 
+// CREATING FUNCTION WHICH WILL UPDATE POSITION/MOVEMENT & SCORE 
+function update() {
+    ball.x += ball.velocityX;
+    ball.y += ball.velocityY;
+
+    if(ball.y + ball.radius > cvs.height || ball.y < ball.radius < 0) {
+        ball.velocityY = -ball.velocityY;
+    };
+};
+
+
+
 // CREATING FUNCTION WHICH WILL CALL RENDER AND UPDATE FUNCTIONS 
 function gameBoard () {
     render();
+    update();
 };
 
 const framePerSecond = 50;
