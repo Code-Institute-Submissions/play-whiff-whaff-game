@@ -123,6 +123,9 @@ I have used the following technologies to complete the project:
 4. [**Find Unclosed Tags**](https://www.aliciaramirez.com/closing-tags-checker/)
     * to check for unclosed tags in HTML5
 
+5. [**Coolors**](https://coolors.co/)
+    * to style the website content using a color scheme generator
+
 
 ## Project Testing
 The ptoject testing details can be found in [**TESTING.md**]() file.
@@ -161,16 +164,16 @@ from **Clone with HTTPs** for the repository
 
 * click **Enter** and your local clone will be created 
 
-You can find more information about **cloning**/**troubleshooting** using the following [**link**](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-
-
+You can find more information about **cloning**/**troubleshooting** using the following [**link**](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
 
 ## Credits 
 
 ### Content
+The content of the website was written by me. 
 
 ### Media
+
 
 ## Acknowledgements 
 
