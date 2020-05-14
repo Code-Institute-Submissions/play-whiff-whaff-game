@@ -23,7 +23,7 @@ const opponent = {
     y: cvs.height/2 - 100/2,
     width: 20,
     height: 100, 
-    color: '#fde74c',
+    color: '#7a00f3',
     score: 0
 };
 
@@ -44,8 +44,6 @@ function drawRect(x, y, w, h, color) {
     ctx.fillRect(x, y, w, h);
 };
 
-drawRect(0, 0, cvs.width, cvs.height, '#38cabd');
-
 
 // CREATING FUNCTION TO DRAW A BALL 
 function drawCircle(x, y, r, color) {
@@ -55,8 +53,6 @@ function drawCircle(x, y, r, color) {
     ctx.closePath();
     ctx.fill();
 };
-
-drawCircle(100, 100, 50, '#ea4d06');
 
 
 // CREATING FUNCTION TO DRAW A SCORE 
@@ -78,4 +74,20 @@ function drawOpponent() {
     ctx.fillRect(opponent.x, opponent.y, opponent.width, opponent.height);
 };
 
-drawText('Hello', 300, 200, '#fdfffc');
+// CREATING FUNCTION TO RENDER OTHER FUNCTIONS
+function render() {
+    drawRect(0, 0, cvs.width, cvs.height, '#38cabd');
+
+    drawCircle(ball.x, ball.y, ball.radius, ball.color);
+
+    drawText(racketOne.score, cvs.width/4, cvs.height/8, '#fdfffc');
+
+    drawText(opponent.score, 3*cvs.width/4, cvs.height/8, '#583043');
+
+    drawRacketOne();
+
+    drawOpponent();
+
+};
+
+render();
