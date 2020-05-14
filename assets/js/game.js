@@ -7,12 +7,22 @@ cvs.width = 500;
 cvs.height = 400;
 
 
-
 // CREATING FUNCTION TO DRAW A PLAYFIELD USING DRAW METHOD
-function drawPlayField(x, y, w, h, color) {
+function drawRect(x, y, w, h, color) {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
 };
 
-drawPlayField(0, 0, cvs.width, cvs.height, '#38cabd');
+drawRect(0, 0, cvs.width, cvs.height, '#38cabd');
 
+
+// CREATING FUNCTION TO DRAW A BALL 
+function drawCircle(x, y, r, color) {
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI*2);
+    ctx.fillStyle = color;
+    ctx.closePath();
+    ctx.fill();
+};
+
+drawCircle(100, 100, 50, '#ea4d06');
