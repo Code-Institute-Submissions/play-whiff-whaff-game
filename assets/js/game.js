@@ -7,6 +7,37 @@ cvs.width = 500;
 cvs.height = 400;
 
 
+// DECLARING PARAMETERS TO DRAW PLAYER1 
+const racketOne = {
+    x: 0,
+    y: cvs.height/2 - 100/2,
+    width: 20,
+    height: 100, 
+    color: '#fde74c',
+    score: 0
+};
+
+// DECLARING PARAMETERS TO DRAW OPPONENT
+const opponent = {
+    x: cvs.width - 20,
+    y: cvs.height/2 - 100/2,
+    width: 20,
+    height: 100, 
+    color: '#fde74c',
+    score: 0
+};
+
+// DECLARING PARAMETERS TO DRAW A BALL 
+const ball = {
+    x: cvs.width/2,
+    y: cvs.height/2,
+    radius: 15,
+    speed: 5,
+    velocityX: 5, 
+    velocityY: 5,
+    color: '#ea4d06'
+};
+
 // CREATING FUNCTION TO DRAW A PLAYFIELD USING DRAW METHOD
 function drawRect(x, y, w, h, color) {
     ctx.fillStyle = color;
