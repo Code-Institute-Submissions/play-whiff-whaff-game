@@ -173,6 +173,14 @@ You can find more information about **cloning**/**troubleshooting** using the fo
 The content of the website was written by me. 
 
 ### Media
+I used the following platforms to help designing, creating and completing the project:
+* [**Traversy Media**](https://www.traversymedia.com/)
+
+* [**Code Explained**](https://www.codeexplained.org/)
+
+* [**Web Dev Simplified**](https://blog.webdevsimplified.com/)
+
+* [**YouTube**](https://www.youtube.com/)
 
 
 ## Acknowledgements 
