@@ -10,9 +10,28 @@ when we have an unlimited access to the digital world of sophisticated  and grap
 and not complicated, however, it does not mean that simplicity can boring. Playing this game demands swift reactions and even though it seems to be an easy task 
 to do, the play itself can be a relatively competitive challenge. My main aim and foremost priority was to give the users some good time. 
 
-### Designer's goal / Strategy / Scope
+### Designer's strategy
+* to design a basic but enjoyable game for a wide range of users at any age;
+
+* to apply minimal text, the website user is not overwhelmed with the content and simply not lose interest;
 
 ### Design elements
+*   *background*
+    * applied vidid colors to the project elements to make it *'eye-catching'*
+            
+        * **body**                              
+            <img src="assets/images/colors/body.png">
+        * **canvas** 
+            <img src="assets/images/colors/canvas.png">
+
+
+*   *fonts*
+    * a single-type of font has been used to keep the text consistent through the website content
+
+
+
+    
+
 
 ## User Stories 
 
