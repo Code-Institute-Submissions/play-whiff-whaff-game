@@ -128,8 +128,27 @@ I have used the following technologies to complete the project:
 The ptoject testing details can be found in [**TESTING.md**]() file.
 
 ## Deployment 
+The project was completed using the [**Gitpod**](https://www.gitpod.io/) environment.
+The website's deployment to GitHub Pages can be achieved using its [**GitHub**](https://github.com/KrisK1978/play-whiff-whaff-game)
+repository and the following steps: 
+
+* log in to [**GitHub**](https://github.com/login)
+
+* select **play-whiff-whaff-game** from the list of **repositories**
+
+* go to **Settingd** from the menu items located near the top of the page 
+
+* click on a drop-down menu located under the **Source** and select **Master Branch**
+
+*   the page is automatically refreshed and the website is deployed when **Master Branch** is selected
+
+* you can retrieve the link to the deployed website by scrolling back down to the **GitHub Pages** section
+
 
 ### How to run this project locally?
+You can clone the project from **GitHub** using the following process:
+
+* follow the link to the [**repository project**](https://github.com/KrisK1978/play-whiff-whaff-game)
 
 ## Credits 
 
