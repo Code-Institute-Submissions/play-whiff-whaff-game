@@ -106,15 +106,14 @@ function render() {
 
 };
 
-// INITIATING USER CONTROLS BY ADDING EVENT LISTENER 
+// INITIATING USER CONTROLS 
 cvs.addEventListener('mousemove', controlMove);
 
 // CREATING FUNCTION TO CONTROL THE PLAYER MOVES 
 function controlMove(e) {
-
-// DECLARING VARIABLE RECT TO GET TO TOP OF THE CANVAS
     let rect = cvs.getBoundingClientRect();
     racketOne.y = e.clientY - rect.top - racketOne.height/2;
+
 };
 
 // CREATING COLLISION DETECTION FUNCTION
@@ -129,39 +128,40 @@ function detectionWalls(b, p) {
     p.left = p.x;
     p.right = p.x + p.width;
 
-    return b.right > p.left && b.bottom > p.top && b.left < p.right && b.top < p.bottom;
+    return b.right > p.left && b.bottom > p.top && b.left < p.right && 
+    b.top < p.bottom;
 
 };
 
-// CREATING FUNCTION WHICH WILL UPDATE POSITION/MOVEMENT & SCORE 
+
+// CREATING FUNCTION TO UPDATE THE PLAYER POSITION/SCORE
 function update() {
 
 // INITIATING BALL MOVEMENT
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
-    if(ball.y + ball.radius > cvs.height || ball.y < ball.radius < 0) {
+// ADDING BASIC AI TO CONTROL COM MOVEMENT
+    let computerLevel = 0.1;
+    opponent.y += (ball.y - (opponent.y + opponent.height/2)) * computerLevel;
+
+    if(ball.y + ball.radius > cvs.height || ball.y - ball.radius < 0) {
         ball.velocityY = -ball.velocityY;
     };
 
-// ADDING VARIABLE TO DETERMINE WHO HITS THE BALL 
+// DECLARING PLAYER VARIABLE TO DETERMINE WHO IS HITTING THE BALL
     let player = (ball.x < cvs.width/2) ? racketOne : opponent;
 
     if(detectionWalls(ball, player)){
-
-    };
+        ball.velocityX = -ball.velocityX;
+    }
 };
 
-
-
-// CREATING FUNCTION WHICH WILL CALL RENDER AND UPDATE FUNCTIONS 
-function gameBoard () {
+function game() {
     render();
     update();
 };
 
 const framePerSecond = 50;
-setInterval(gameBoard, 1000/framePerSecond)
-
-
+setInterval(game, 1000/framePerSecond);
 
