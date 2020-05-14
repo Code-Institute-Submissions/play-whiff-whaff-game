@@ -7,7 +7,7 @@ cvs.width = 500;
 cvs.height = 400;
 
 
-// DECLARING PARAMETERS TO DRAW PLAYER1 
+// DECLARING ARGUMENTS TO DRAW PLAYER1 
 const racketOne = {
     x: 0,
     y: cvs.height/2 - 100/2,
@@ -17,7 +17,7 @@ const racketOne = {
     score: 0
 };
 
-// DECLARING PARAMETERS TO DRAW OPPONENT
+// DECLARING ARGUMENTS TO DRAW OPPONENT
 const opponent = {
     x: cvs.width - 20,
     y: cvs.height/2 - 100/2,
@@ -27,7 +27,7 @@ const opponent = {
     score: 0
 };
 
-// DECLARING PARAMETERS TO DRAW A BALL 
+// DECLARING ARGUMENTS TO DRAW A BALL 
 const ball = {
     x: cvs.width/2,
     y: cvs.height/2,
@@ -38,7 +38,7 @@ const ball = {
     color: '#ea4d06'
 };
 
-// DECLARING PARAMETERS TO DRAW A NET
+// DECLARING ARGUMENTS TO DRAW A NET
 const gameNet = {
     x: cvs.width/2 - 1,
     y: 0,
@@ -106,4 +106,13 @@ function render() {
 
 };
 
-render();
+// CREATING FUNCTION WHICH WILL CALL RENDER AND UPDATE FUNCTIONS 
+function gameBoard () {
+    render();
+};
+
+const framePerSecond = 50;
+setInterval(gameBoard, 1000/framePerSecond)
+
+
+
