@@ -47,6 +47,11 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
 
 
 ## User Stories 
+1. User's expectations:
+    * As a new visitor, I am hoping to have an easy access to website's content;
+    * As a new visitor, I am expecting to find the website user-friendly and simple to navigate;
+    * As a new visitor, I am expecting to find the game-rules clear and easy to understand;
+    * As a new visitor, I want to connect with the website's host using the available social-media links;
 
 ## Wireframes
 
