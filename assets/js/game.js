@@ -26,3 +26,13 @@ function drawCircle(x, y, r, color) {
 };
 
 drawCircle(100, 100, 50, '#ea4d06');
+
+
+// CREATING FUNCTION TO DRAW A SCORE 
+function drawText(text, x, y, color) {
+    ctx.font = '45px Inconsolata, monospace';
+    ctx.fillStyle = color;
+    ctx.fillText(text, x, y);
+};
+
+drawText('Hello', 300, 200, '#fdfffc');
