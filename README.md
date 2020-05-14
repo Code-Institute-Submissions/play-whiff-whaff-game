@@ -3,7 +3,7 @@ Players use small rackets and must allow a ball played toward them to bounce one
 The point is scored when the player fails to return the ball. It seems to be an easy game, but **Ping-Pong** is considered as a fast-paced challenge and requires quick reactions. 
 
 ## Demo 
-The website demo can be found [**here**](https://krisk1978.github.io/play-whiff-whaff-game/).
+The website demo can be found [**here**]().
 ## UX
 
 ### Project goal 

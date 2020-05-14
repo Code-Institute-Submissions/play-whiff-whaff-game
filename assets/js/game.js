@@ -38,12 +38,20 @@ const ball = {
     color: '#ea4d06'
 };
 
+// DECLARING PARAMETERS TO DRAW A NET
+const gameNet = {
+    x: cvs.width/2 - 1,
+    y: 0,
+    width: 10, 
+    height: 10,
+    color: '#ff489f'
+};
+
 // CREATING FUNCTION TO DRAW A PLAYFIELD USING DRAW METHOD
 function drawRect(x, y, w, h, color) {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
 };
-
 
 // CREATING FUNCTION TO DRAW A BALL 
 function drawCircle(x, y, r, color) {
@@ -53,7 +61,6 @@ function drawCircle(x, y, r, color) {
     ctx.closePath();
     ctx.fill();
 };
-
 
 // CREATING FUNCTION TO DRAW A SCORE 
 function drawText(text, x, y, color) {
@@ -74,6 +81,13 @@ function drawOpponent() {
     ctx.fillRect(opponent.x, opponent.y, opponent.width, opponent.height);
 };
 
+// CREATING FUNCTION TO DRAW THE NET 
+function drawGameNet() {
+    for(let i = 0; i <= cvs.height; i+=15) {
+        drawRect(gameNet.x, gameNet.y + i, gameNet.width, gameNet.height, gameNet.color);
+    };
+};
+
 // CREATING FUNCTION TO RENDER OTHER FUNCTIONS
 function render() {
     drawRect(0, 0, cvs.width, cvs.height, '#38cabd');
@@ -87,6 +101,8 @@ function render() {
     drawRacketOne();
 
     drawOpponent();
+
+    drawGameNet();
 
 };
 
