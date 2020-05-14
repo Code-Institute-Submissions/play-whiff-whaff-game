@@ -82,7 +82,7 @@ once clicked on the button/tab called **Check The Leaderboard**.
 
 ## Technologies used 
 I have used the following technologies to complete the project:
-1. ### HTML
+1. ### HTML5
     * to define the properties and behaviours of the website content
 
 2. ### CSS 
@@ -120,7 +120,12 @@ I have used the following technologies to complete the project:
 3. [**Code Explained**](https://www.codeexplained.org/)
     * to create the **Ping-Pong** game and understand the logic of JavaScript functions
 
+4. [**Find Unclosed Tags**](https://www.aliciaramirez.com/closing-tags-checker/)
+    * to check for unclosed tags in HTML5
+
+
 ## Project Testing
+The ptoject testing details can be found in [**TESTING.md**]() file.
 
 ## Deployment 
 
