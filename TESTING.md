@@ -12,4 +12,16 @@
 
 3. **Testing:** 
 
+    3.1 **User stories**
+
+    **User’s expectations:**
+
+    * As a new user, I am hoping to have an easy access to website's content;
+
+    * As a new user, I am expecting to see the website user-friendly and simple to navigate;
+
+    * As a new user, I am hoping to enjoy the game;
+
+    * As a new user, I want to connect with the website host using the available social-media links;
+
 
