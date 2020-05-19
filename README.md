@@ -18,7 +18,7 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
 * to apply minimal text, the website user is not overwhelmed with the content and simply not lose interest;
 
 ### Design elements
-*   I have applied a color pallete to specific elements (body, canvas, etc.) of the project to achieve an *'eye-catching'* effect
+*   a color pallete has been used to the specific elements (body, canvas, etc.) of the project to achieve an *'eye-catching'* effect;
     
     <img src="wireframes/color-pallete/body.png" alt="body">
     
@@ -33,7 +33,8 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
     <img src="wireframes/color-pallete/ball.png" alt="ball">
 
         
-*   a single-type of font has been used to keep the text consistent through the website content
+*   a single-type of font **Inconsolata** has been used to keep the text consistent through the website content, and the 
+color to make it more visible;
 
     <img src="wireframes/color-pallete/text.png" alt="text">
 
@@ -99,7 +100,7 @@ I have used the following technologies to complete the project:
 
 
 ## Project Testing
-The ptoject testing details can be found in [**TESTING.md**]() file.
+The project testing details can be found in [**TESTING.md**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/TESTING.md) file.
 
 ## Deployment 
 The project was completed using the [**Gitpod**](https://www.gitpod.io/) environment.
