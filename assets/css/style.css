@@ -14,11 +14,10 @@ body {
     margin: 0
 }
 
+/*CANVAS STYLING*/
 #gameCanvas {
     border: 10px solid #ff489f;
 }
-
-
 
 /*APPLYING STYLE TO SOCIAL LINKS ICONS*/
 
