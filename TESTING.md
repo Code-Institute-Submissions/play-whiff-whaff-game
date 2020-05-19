@@ -10,9 +10,11 @@
 
 * [**W3C CSS Validation**](https://jigsaw.w3.org/css-validator/)
 
-3. **Testing:** 
+* [**JS Hint**](https://jshint.com/)
 
-    3.1 **User stories**
+## Testing:
+
+1. **User stories**
 
     **User’s expectations:**
 
@@ -24,11 +26,11 @@
 
     * As a new user, I am hoping to enjoy the game
         - the simplicity of the game will be its value as there is no complicated set of game rules which 
-        could make the player confused
+            could make the player confused
 
     * As a new user, I want to connect with the website host using the available social-media links;
         - the available social-media links are active and once an icon is clicked/tapped it will take the user 
-        to the external websites where the information about the website's host can be found
+            to the external websites where the information about the website's host can be found
 
 
 ## Additional Testing 
