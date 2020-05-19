@@ -18,41 +18,24 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
 * to apply minimal text, the website user is not overwhelmed with the content and simply not lose interest;
 
 ### Design elements
-*   *background*
-    * applied vidid colors to the project elements to make it *'eye-catching'*
-            
-        * **body**    
+*   I have applied a color pallete to specific elements (body, canvas, etc.) of the project to achieve an *'eye-catching'* effect
+    
+    <img src="wireframes/color-pallete/body.png" alt="body">
+    
+    <img src="wireframes/color-pallete/canvas.png" alt="canvas">
 
-        <img src="assets/images/colors/body.png" alt="body">
-       
-        * **canvas**  
+    <img src="wireframes/color-pallete/player.png" alt="player">
 
-        <img src="assets/images/colors/canvas.png" alt="canvas">
+    <img src="wireframes/color-pallete/opponent.png" alt="opponent">
 
-        * **game elements (players/net/ball) - other colors used**
+    <img src="wireframes/color-pallete/net.png" alt="net">
 
-        <img src="assets/images/colors/player.png" alt="player">
-
-        <img src="assets/images/colors/opponent.png" alt="opponent">
-
-        <img src="assets/images/colors/net.png" alt="net">
-
-        <img src="assets/images/colors/ball.png" alt="ball">
+    <img src="wireframes/color-pallete/ball.png" alt="ball">
 
         
-*   *fonts*
-    * a single-type of font has been used to keep the text consistent through the website content
+*   a single-type of font has been used to keep the text consistent through the website content
 
-        <img src="assets/images/colors/text.png" alt="text">
-
-
-
-## User Stories 
-1. User's expectations:
-    * As a new visitor, I am hoping to have an easy access to website's content;
-    * As a new visitor, I am expecting to find the website user-friendly and simple to navigate;
-    * As a new visitor, I am expecting to find the game-rules clear and easy to understand;
-    * As a new visitor, I want to connect with the website's host using the available social-media links;
+    <img src="wireframes/color-pallete/text.png" alt="text">
 
 ## Wireframes
 [**GAME**]()
@@ -84,49 +67,35 @@ once clicked on the button/tab called **Check The Leaderboard**.
 
 ## Technologies used 
 I have used the following technologies to complete the project:
-1. ### HTML5
-    * to define the properties and behaviours of the website content
-
+1. ### HTML
+   
 2. ### CSS 
-    * to decribe how HTML elements should be displayed on the screen 
 
 3. ### [Bootswatch](https://bootswatch.com/)
-    * to make sure the website is user friendly and responsive
 
 4. ### [Font Awesome](https://fontawesome.com/)
-    * to give a high-quality iconography on every device 
 
 5. ### [Google Fonts](https://fonts.google.com/)
-    * to style the website fonts
 
 6. ### [Favicon](https://www.favicon-generator.org/)
-    * to generate an icon which will be associated with the website
 
-6. ### Popper.js 
-    * to calculate the element's position 
+6. ### jQuery
 
-7. ### JavaScript 
-    * *jQuery*: to simplify HTML DOM Tree traversal and manipulation
-
-    * *game.js*: to render the canvas context and 2d shapes and allow 
-    the website user to play a round of **Whiff-Whaff** game 
-
+7. ### Popper.js
+   
 ## Other external support used to build the project
 
 1. [**Am I Responsive?**](http://ami.responsivedesign.is/)
-    * to check the website responsiveness 
 
 2. [**JS Hint**](https://jshint.com/)
-    * to detect errors and potential problems in JavaScript
 
 3. [**Code Explained**](https://www.codeexplained.org/)
-    * to create the **Ping-Pong** game and understand the logic of JavaScript functions
 
 4. [**Find Unclosed Tags**](https://www.aliciaramirez.com/closing-tags-checker/)
-    * to check for unclosed tags in HTML5
 
 5. [**Coolors**](https://coolors.co/)
-    * to style the website content using a color scheme generator
+
+6. **Unicorn Revealer**
 
 
 ## Project Testing
