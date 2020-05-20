@@ -3,15 +3,14 @@
  */  
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
-
 /** 
  * Declares canvas width & height
  */
 cvs.width = 500;
 cvs.height = 400;
-
-
-// DECLARING ARGUMENTS TO DRAW PLAYER1 
+/**
+ * Declares game elements
+ */
 const racketOne = {
     x: 0,
     y: cvs.height/2 - 100/2,
@@ -21,7 +20,6 @@ const racketOne = {
     score: 0
 };
 
-// DECLARING ARGUMENTS TO DRAW OPPONENT
 const opponent = {
     x: cvs.width - 20,
     y: cvs.height/2 - 100/2,
@@ -31,7 +29,6 @@ const opponent = {
     score: 0
 };
 
-// DECLARING ARGUMENTS TO DRAW A BALL 
 const ball = {
     x: cvs.width/2,
     y: cvs.height/2,
@@ -42,7 +39,6 @@ const ball = {
     color: '#ea4d06'
 };
 
-// DECLARING ARGUMENTS TO DRAW A NET
 const gameNet = {
     x: cvs.width/2 - 1,
     y: 0,
@@ -105,7 +101,7 @@ function drawGameNet() {
 };
 
 /**
- * Draws game elements - playefield, players, ball, net, score
+ * Draws game elements - play-field, players, ball, net, score
  */ 
 function render() {
     drawRect(0, 0, cvs.width, cvs.height, '#38cabd');
