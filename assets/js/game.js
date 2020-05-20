@@ -1,8 +1,12 @@
-// SELECTING CANVAS ELEMENTS 
+/** 
+ * Selects canvas elements
+ */  
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
 
-// DECLARING CANVAS WIDTH & HEIGHT
+/** 
+ * Declares canvas width & height
+ */
 cvs.width = 500;
 cvs.height = 400;
 
@@ -47,13 +51,17 @@ const gameNet = {
     color: '#ff489f'
 };
 
-// CREATING FUNCTION TO DRAW A PLAYFIELD USING DRAW METHOD
+/** 
+ * Draws a play-field
+ */
 function drawRect(x, y, w, h, color) {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
 };
 
-// CREATING FUNCTION TO DRAW A BALL 
+/**
+ * Draws a ball 
+ */ 
 function drawCircle(x, y, r, color) {
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI*2);
@@ -62,33 +70,43 @@ function drawCircle(x, y, r, color) {
     ctx.fill();
 };
 
-// CREATING FUNCTION TO DRAW A SCORE 
+/**
+ * Draws the game score
+ */
 function drawText(text, x, y, color) {
     ctx.font = '45px Inconsolata, monospace';
     ctx.fillStyle = color;
     ctx.fillText(text, x, y);
 };
 
-// CREATING FUNCTION TO DRAW A PLAYER1
+/**
+ * Draws Player 1 
+ */ 
 function drawRacketOne() {
     ctx.fillStyle = racketOne.color;
     ctx.fillRect(racketOne.x, racketOne.y, racketOne.width, racketOne.height);
 };
 
-// CREATING FUNCTION TO DRAW THE OPPONENT
+/**
+ * Draws Player 2 (Opponent)
+ */
 function drawOpponent() {
     ctx.fillStyle = opponent.color;
     ctx.fillRect(opponent.x, opponent.y, opponent.width, opponent.height);
 };
 
-// CREATING FUNCTION TO DRAW THE NET 
+/**
+ * Draws the game net 
+ */
 function drawGameNet() {
     for(let i = 0; i <= cvs.height; i+=15) {
         drawRect(gameNet.x, gameNet.y + i, gameNet.width, gameNet.height, gameNet.color);
     };
 };
 
-// CREATING FUNCTION TO RENDER OTHER FUNCTIONS
+/**
+ * Draws game elements - playefield, players, ball, net, score
+ */ 
 function render() {
     drawRect(0, 0, cvs.width, cvs.height, '#38cabd');
 
@@ -106,17 +124,23 @@ function render() {
 
 };
 
-// INITIATING USER CONTROLS 
+/**
+ * Initiates user controls 
+ */
 cvs.addEventListener('mousemove', controlMove);
 
-// CREATING FUNCTION TO CONTROL THE PLAYER MOVES 
+/**
+ * Controls player moves 
+ */ 
 function controlMove(e) {
     let rect = cvs.getBoundingClientRect();
     racketOne.y = e.clientY - rect.top - racketOne.height/2;
 
 };
 
-// CREATING COLLISION DETECTION FUNCTION
+/**
+ * Detects collision walls  
+ */
 function detectionWalls(b, p) {
     b.top = b.y - b.radius;
     b.bottom = b.y + b.radius;
@@ -134,14 +158,20 @@ function detectionWalls(b, p) {
 };
 
 
-// CREATING FUNCTION TO UPDATE THE PLAYER POSITION/SCORE
+/**
+ * Updates player's position and score
+ */
 function update() {
 
-// INITIATING BALL MOVEMENT
+/**
+ * Initiates ball movement
+ */
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
-// ADDING BASIC AI TO CONTROL OPPONENT MOVEMENT
+/**
+ * Adds basic AI to control Player 2 (Opponent) movement
+ */
     let opponentLevel = 0.1;
     opponent.y += (ball.y - (opponent.y + opponent.height/2)) * opponentLevel;
 
@@ -149,7 +179,9 @@ function update() {
         ball.velocityY = -ball.velocityY;
     };
 
-// DECLARING PLAYER VARIABLE TO DETERMINE WHO IS HITTING THE BALL
+/**
+ * Determines who is hitting the ball  
+ */
     let player = (ball.x < cvs.width/2) ? racketOne : opponent;
 
     if(detectionWalls(ball, player)){
@@ -170,10 +202,10 @@ function update() {
 // INCREASING THE SPEED OF THE BALL ONCE HIT BY PLAYER/OPPONENT
         ball.speed += 0.5;
     };
-// UPDATING THE SCORE 
+/**
+ * Updates the score
+ */ 
     if(ball.x - ball.radius < 0) {
-
-// THE OPPONENT SCORES 
         opponent.score++;
         resetBall();
     }else if(ball.x + ball.radius > cvs.width) {
@@ -183,7 +215,9 @@ function update() {
 
 };
 
-// CREATING RESET BALL FUNCTION 
+/**
+ * Resets the ball 
+ */
 function resetBall() {
         ball.x = cvs.width/2;
         ball.y = cvs.height/2;
@@ -193,8 +227,9 @@ function resetBall() {
 
 };
 
-
-// CREATING FUNCTION WHICH WILL CALL BOTH RENDER & UPDATE FUNCTION
+/**
+ * Initiates the game
+ */
 function gameBoard() {
     render();
     update();
