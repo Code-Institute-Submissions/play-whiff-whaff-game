@@ -52,7 +52,7 @@ const gameNet = {
 /** 
  * Draws a play-field
  */
-function drawRect(x, y, w, h, color) {
+let drawRect = (x, y, w, h, color) => {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
 };
@@ -60,7 +60,7 @@ function drawRect(x, y, w, h, color) {
 /**
  * Draws a ball 
  */ 
-function drawCircle(x, y, r, color) {
+let drawCircle = (x, y, r, color) => {
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI*2);
     ctx.fillStyle = color;
@@ -71,7 +71,7 @@ function drawCircle(x, y, r, color) {
 /**
  * Draws the game score
  */
-function drawText(text, x, y, color) {
+let drawText = (text, x, y, color) => {
     ctx.font = '45px Inconsolata, monospace';
     ctx.fillStyle = color;
     ctx.fillText(text, x, y);
@@ -80,7 +80,7 @@ function drawText(text, x, y, color) {
 /**
  * Draws Player 1 
  */ 
-function drawPlayerOne() {
+let drawPlayerOne = () => {
     ctx.fillStyle = ping.color;
     ctx.fillRect(ping.x, ping.y, ping.width, ping.height);
 };
@@ -88,7 +88,7 @@ function drawPlayerOne() {
 /**
  * Draws Player 2 (pong)
  */
-function drawPlayerTwo() {
+let drawPlayerTwo = () => {
     ctx.fillStyle = pong.color;
     ctx.fillRect(pong.x, pong.y, pong.width, pong.height);
 };
@@ -96,7 +96,7 @@ function drawPlayerTwo() {
 /**
  * Draws the game net 
  */
-function drawGameNet() {
+let drawGameNet = () => {
     for(let i = 0; i <= cvs.height; i+=15) {
         drawRect(gameNet.x, gameNet.y + i, gameNet.width, gameNet.height, gameNet.color);
     };
@@ -105,7 +105,7 @@ function drawGameNet() {
 /**
  * Draws game elements - play-field, players, ball, net, score
  */ 
-function callIn() {
+let  callIn = () => {
     drawRect(0, 0, cvs.width, cvs.height, '#38cabd');
     drawCircle(ball.x, ball.y, ball.radius, ball.color);
     drawText(ping.score, cvs.width/4, cvs.height/8, '#fdfffc');
@@ -113,7 +113,6 @@ function callIn() {
     drawPlayerOne();
     drawPlayerTwo();
     drawGameNet();
-
 };
 
 /**
@@ -132,7 +131,7 @@ function controlMove(e) {
 /**
  * Detects collision walls  
  */
-function detectionWalls(b, p) {
+let detectionWalls = (b, p) => {
     b.top = b.y - b.radius;
     b.bottom = b.y + b.radius;
     b.left = b.x - b.radius;
@@ -149,9 +148,9 @@ function detectionWalls(b, p) {
 };
 
 /**
- * Updates player's position/score/ball's speed & resets the ball
+ * Updates player's position/score/ball's speed & resets the ball.
  */
-function update() {
+let update = () => {
 
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
@@ -187,9 +186,9 @@ function update() {
 };
 
 /**
- * Resets the ball 
+ * Resets the ball.
  */
-function resetBall() {
+let resetBall = () => {
         ball.x = cvs.width/2;
         ball.y = cvs.height/2;
         ball.speed = 5;
@@ -197,9 +196,9 @@ function resetBall() {
 };
 
 /**
- * Initiates the game
+ * Initiates the game.
  */
-function gameBoard() {
+let gameBoard = () => {
     callIn();
     update();
 };
