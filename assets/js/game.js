@@ -3,11 +3,13 @@
  */  
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
+
 /** 
  * Declares canvas width & height
  */
-cvs.width = 500;
-cvs.height = 400;
+cvs.width = 600;
+cvs.height = 300;
+
 /**
  * Declares game elements
  */
@@ -131,7 +133,6 @@ cvs.addEventListener('mousemove', controlMove);
 function controlMove(e) {
     let rect = cvs.getBoundingClientRect();
     racketOne.y = e.clientY - rect.top - racketOne.height/2;
-
 };
 
 /**
@@ -153,12 +154,10 @@ function detectionWalls(b, p) {
 
 };
 
-
 /**
  * Updates player's position and score
  */
 function update() {
-
 /**
  * Initiates ball movement
  */
@@ -185,17 +184,25 @@ function update() {
 
         collidePoint = collidePoint/(player.height/2);
 
-// CALCULATING ANGLE IN RADIAN
+/**
+ * Calculated angle in radian
+ */
         let angleRad = collidePoint * Math.PI/4;
 
-// DIRECTING THE BALL WHEN IT IS HIT
+/**
+ *  Directs the ball when it is hit
+ */ 
         let direction = (ball.x < cvs.width/2) ? 1 : -1;
 
-// CHANGING VELOCITY X & Y 
+/**
+ * Changes the velocity of X & Y
+ */
         ball.velocityX = direction * ball.speed * Math.cos(angleRad);
         ball.velocityY = ball.speed * Math.sin(angleRad);
 
-// INCREASING THE SPEED OF THE BALL ONCE HIT BY PLAYER/OPPONENT
+/**
+ * Increases the speed of the ball once hit by the players
+ */
         ball.speed += 0.5;
     };
 /**
@@ -220,7 +227,6 @@ function resetBall() {
 
         ball.speed = 5;
         ball.velocityX = -ball.velocityX;
-
 };
 
 /**
@@ -233,4 +239,3 @@ function gameBoard() {
 
 const framePerSecond = 50;
 setInterval(gameBoard, 1000/framePerSecond);
-
