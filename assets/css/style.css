@@ -37,13 +37,29 @@ h4 {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
 /*CANVAS STYLING*/
 #gameCanvas {
     display: none;
     border: 10px solid #ff489f;
-    margin-top: 25px;
+    margin: 25px 25px;
 }
+
+/*STYLING RULES MODAL*/
+#rulesModal {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(11, 248, 31, 0.6);
+}
+
+
 
 /*STYLING OPEN & CLOSE BUTTONS*/
 #rules {
@@ -55,7 +71,7 @@ h4 {
     background-color: #17ffce;
     border: 3px solid #c41455;
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 15px;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
@@ -71,7 +87,7 @@ h4 {
     background-color: #dd73ff;
     border: 3px solid #c56f14;
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 15px;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
@@ -86,7 +102,7 @@ h4 {
     background-color: #00ff00;
     border: 3px solid #9414ff;
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 15px;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
@@ -107,7 +123,7 @@ h4 {
     border: 3px solid #641220;
     color: #e71d36;
     border-radius: 5px;
-    margin-top: 60px;
+    margin-top: 45px;
     padding: 3px;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;

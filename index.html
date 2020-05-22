@@ -12,25 +12,28 @@
 <title>Whiff-Whaff</title>
 </head>
 <body>
-<!--ADDING INTRO TEXT/OPEN BUTTON & CLOSE BUTTON-->
+<!--ADDING INTRO TEXT & RULES INFO-->
+ <div class="container-fluid">
+    <h3>Welcome to the World of Arcade Games!</h3>
+    <h4>We present you a Ping-Pong game!</h4>
+    <div id="rulesModal" class="modal">
+        <div class="rules-content">
+            <h3>How to score the point?</h3>
+        </div>
+    </div>
 
-            <h3>Welcome to the World of Arcade Games!</h3>
-            <h4>We present you a Ping-Pong game!</h4>
-            
+</div>
+
 
 <!--CREATING GAME CANVAS-->
     <canvas id="gameCanvas"></canvas>
 <!--ADDING MODAL WITH SET OF GAME RULES-->
 
-    <div id="rulesModal" class="modal-fade" role="dialog">
-        <div class="modal-dialog modal-lg"></div>
-    </div>
-
 <!--ADDING SOCIAL-LINKS AND COPYRIGHT TEXT-->
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <a id="rules" href="#" data-toggle="modal" data-target="rulesModal">RULES</a>
+            <a id="rules" href="#" data-toggle="modal" data-target="#rulesModal">RULES</a>
             <a id="openGame" href="#">START</a>
             <a id="closeGame" href="#">CLOSE</a>
         </div>
