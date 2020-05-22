@@ -42,7 +42,15 @@ h5 {
     font-size: 24px;
     color: #d81a31;  
     font-weight: bold;
+    margin-top: 15px;
 }
+
+p {
+    color: #0000ec;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
 /*CANVAS STYLING*/
 #gameCanvas {
     display: none;
@@ -94,24 +102,7 @@ h5 {
     margin: 15px 25px 15px 25px;
 }
 
-/*STYLING 'X' BAR*/
-.close-bar {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 35px;
-    font-weight: bold;
-    color: #5500bd;
-    margin-right: 15px;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-   -moz-transition: all .4s ease-in-out;
-   -webkit-transition: all .4s ease-in-out;
-   -o-transition: all .4s ease-in-out;
-}
 
-.close-bar:hover {
-    color: #ffb436;  
-}
 /*STYLING OPEN & CLOSE BUTTONS*/
 #gameRules {
     font-size: 20px;

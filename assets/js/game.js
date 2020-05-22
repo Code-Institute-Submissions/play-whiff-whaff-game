@@ -4,10 +4,10 @@
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
 /**
- * Opens open & close buttons
+ * Selects open game/close game buttons
  */
 const startButton = document.getElementById('openGame');
-const closeButton = document.getElementById('closeGame')
+const closeButton = document.getElementById('closeGame');
 /** 
  * Declares canvas width & height
  */
@@ -180,7 +180,7 @@ let resetBall = () => {
         ball.velocityX = -ball.velocityX;
 };
 /**
- * Opens and closes the buttons
+ * Initiates open/close buttons
  */
 startButton.onclick = function() {
     cvs.style.display = 'block';
