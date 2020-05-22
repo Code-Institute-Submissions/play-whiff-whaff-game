@@ -37,6 +37,12 @@ h4 {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+h5 {
+    color: #ea4d06;
+    font-weight: bold;
+    margin-top: 15px;
+}
 /*CANVAS STYLING*/
 #gameCanvas {
     display: none;
@@ -59,7 +65,14 @@ h4 {
     background-color: rgba(11, 248, 31, 0.6);
 }
 
-
+.rules-content {
+    position: relative;
+    background-color: #9ef2fb;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    border: 3px solid #dd0058;
+}
 
 /*STYLING OPEN & CLOSE BUTTONS*/
 #rules {
