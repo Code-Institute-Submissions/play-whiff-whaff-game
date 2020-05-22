@@ -72,6 +72,14 @@ h5 {
     margin: auto;
     padding: 0;
     border: 3px solid #dd0058;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/*STYLING ANIMATION*/
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
 }
 
 /*STYLING OPEN & CLOSE BUTTONS*/

@@ -4,18 +4,10 @@
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
 /**
- * Opens and closes the game
+ * Opens open & close buttons
  */
-
 const startButton = document.getElementById('openGame');
 const closeButton = document.getElementById('closeGame')
-startButton.onclick = function() {
-    cvs.style.display = 'block';
-};
-closeButton.onclick = function() {
-    cvs.style.display = 'none';
-};
-
 /** 
  * Declares canvas width & height
  */
@@ -146,7 +138,7 @@ let detectionWalls = (b, p) => {
 /**
  * Updates player's position/score/ball's speed & resets the ball.
  */
-let update = () => {
+let updateGameElements = () => {
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
@@ -178,9 +170,6 @@ let update = () => {
         resetBall();
     };
 };
-
-
-
 /**
  * Resets the ball.
  */
@@ -190,16 +179,27 @@ let resetBall = () => {
         ball.speed = 5;
         ball.velocityX = -ball.velocityX;
 };
-
+/**
+ * Opens and closes the buttons
+ */
+startButton.onclick = function() {
+    cvs.style.display = 'block';
+};
+closeButton.onclick = function() {
+    cvs.style.display = 'none';
+};
 /**
  * Initiates the game.
  */
 let playGame = () => {
     callIn();
-    update();
+    updateGameElements();
 };
 const framePerSecond = 50;
 setInterval(playGame, 1000/framePerSecond);
+
+
+
 
 
 
