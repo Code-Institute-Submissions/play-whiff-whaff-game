@@ -40,7 +40,7 @@ color to make it more visible;
 
 
 ## Wireframes
-[**GAME**]()
+[**GAME**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/wireframes/Game.pdf)
 
 ## Features
 1. The main section contains intro text ('Welcome to the World of Arcade Games!'). The background-color has been applied
