@@ -3,6 +3,19 @@
  */  
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
+/**
+ * Opens and closes the game
+ */
+
+const startButton = document.getElementById('openGame');
+const closeButton = document.getElementById('closeGame')
+startButton.onclick = function() {
+    cvs.style.display = 'block';
+};
+closeButton.onclick = function() {
+    cvs.style.display = 'none';
+};
+
 /** 
  * Declares canvas width & height
  */
@@ -185,20 +198,11 @@ let playGame = () => {
     callIn();
     update();
 };
-
 const framePerSecond = 50;
 setInterval(playGame, 1000/framePerSecond);
 
-const startButton = document.getElementById('openGame');
-const closeButton = document.getElementById('closeGame');
 
-startButton.onclick = function() {
-    cvs.style.display = 'block';
-};
 
-closeButton.onclick = function() {
-    cvs.style.display = 'none';
-};
 
 
 
