@@ -46,13 +46,29 @@ h4 {
 }
 
 /*STYLING OPEN & CLOSE BUTTONS*/
+#rules {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5200cf;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #17ffce;
+    border: 3px solid #c41455;
+    border-radius: 5px;
+    margin: 10px;
+    transition: all .4s ease-in-out;
+   -moz-transition: all .4s ease-in-out;
+   -webkit-transition: all .4s ease-in-out;
+   -o-transition: all .4s ease-in-out;
+}
+
 #openGame {
     font-size: 20px;
     font-weight: bold;
-    color: #fdfffc;
+    color: #cae1f2;
     text-decoration: none;
     padding: 8px;
-    background-color: #fb7ac6;
+    background-color: #dd73ff;
     border: 3px solid #c56f14;
     border-radius: 5px;
     margin: 10px;
@@ -67,7 +83,7 @@ h4 {
     color: #c9172b;
     text-decoration: none;
     padding: 8px;
-    background-color: #fffd84;
+    background-color: #00ff00;
     border: 3px solid #9414ff;
     border-radius: 5px;
     margin: 10px;
@@ -77,14 +93,12 @@ h4 {
    -o-transition: all .4s ease-in-out;
 }
 
+#rules:hover,
 #openGame:hover,
 #closeGame:hover {
-    background-color: #85e0f5;
-    border: 3px solid #ff489f;
-    color: #7a1614;
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    background-color: #ff489f;
+    border: 3px solid #17ffce;
+    color: #fad345;
 }
 
 /*APPLYING STYLE TO SOCIAL LINKS ICONS*/
@@ -106,7 +120,7 @@ h4 {
 .fa-github-square:hover,
 .fa-instagram:hover,
 .fa-twitter-square:hover {
-    background-color: #27ffd5;
+    background-color: #2fffd8;
     -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
             transform: scale(1.3);
@@ -115,7 +129,7 @@ h4 {
 /*COPYRIGHT TEXT STYLING*/
 .copyright {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #932203;
     margin-top: 10px;
