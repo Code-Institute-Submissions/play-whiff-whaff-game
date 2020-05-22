@@ -36,7 +36,6 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
 *   a single-type of font **Inconsolata** has been used to keep the text consistent through the website content, and the 
 color to make it more visible;
 
-    <img src="wireframes/color-pallete/text.png" alt="text">
 
 ## Wireframes
 [**GAME**]()

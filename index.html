@@ -19,13 +19,19 @@
     <div id="rulesModal" class="modal">
         <div class="rules-content">
         <span class="close-bar">&times;</span>
-            <h5>How to score the point?</h5>
+            <h5>How to play?</h5>
+            <ul class="list-rules">
+                <li>control the paddle by moving vertically accross
+                the left side of the screen (the right side is controled
+                by computer)</li>
+                <li>use your paddle to hit the ball back and forth</li>
+                <li>the points are earned when of the players fail 
+                to return the ball to the other side</li>
+                <li>stay focused as the ball's speed increases with the number of hits</li>
+            </ul>
         </div>
     </div>
-
 </div>
-
-
 <!--CREATING GAME CANVAS-->
     <canvas id="gameCanvas"></canvas>
 <!--ADDING MODAL WITH SET OF GAME RULES-->
@@ -33,8 +39,8 @@
 <!--ADDING SOCIAL-LINKS AND COPYRIGHT TEXT-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-6">
-            <a id="rules" href="#" data-toggle="modal" data-target="#rulesModal">RULES</a>
+        <div class="col-sm-12">
+            <a id="gameRules" href="#" data-toggle="modal" data-target="#rulesModal">RULES</a>
             <a id="openGame" href="#">START</a>
             <a id="closeGame" href="#">CLOSE</a>
         </div>
