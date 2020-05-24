@@ -6,7 +6,7 @@ The point is scored when the player fails to return the ball. It seems to be an 
 
 ### Project goal 
 The main purpose for creating this website was to deliver a game which will be fun to play at every age. This could be a demanding task nowadays, especially
-when we have an unlimited access to the digital world of sophisticated  and graphically involved games. Although *Whiff-Whaff* can be considered as very basic 
+when we have an unlimited access to the digital world of sophisticated  and graphically involved games. Although **Whiff-Whaff** can be considered as very basic 
 and not complicated, however, it does not mean that simplicity can boring. Playing this game demands swift reactions and even though it seems to be an easy task 
 to do, the play itself can be a relatively competitive challenge. My main aim and foremost priority was to give the users some good time. 
 

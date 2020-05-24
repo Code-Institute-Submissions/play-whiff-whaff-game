@@ -12,6 +12,7 @@
 html {
     width: 100%;
     height: 100%;
+    font-size: 62.5%;
 }
 
 body {
@@ -29,23 +30,27 @@ body {
 
 h3, h4, h5 {
     font-weight: 700;
-    margin: 15px 15px;
+    margin: 20px 15px;
 }
 h3 {
+    font-size: 3rem;
     color: #e32e44;
 }
 
 h4 {
+    font-size: 2.5rem;
     color: #0000ec;
 }
 
 h5 {
+    font-size: 2.2rem;
     color: #d81a31;  
 }
 
 p {
+    font-size: 1.5rem;
     color: #0000ec;
-    margin-top: 15px;
+    margin: 10px;
 }
 
 /*CANVAS STYLING*/
@@ -93,7 +98,7 @@ p {
 }
 /*ADDING STYLE TO RULES LIST*/
 .list-rules li {
-    font-size: 18px;
+    font-size: 1.8rem; 
     font-weight: 700;
     color: #588a21;
     margin: 15px 25px 15px 25px;
@@ -102,7 +107,7 @@ p {
 
 /*STYLING OPEN & CLOSE BUTTONS*/
 #gameRules {
-    font-size: 20px;
+    font-size: 2rem; 
     font-weight: 700;
     color: #5200cf;
     text-decoration: none;
@@ -118,7 +123,7 @@ p {
 }
 
 #openGame {
-    font-size: 20px;
+    font-size: 2rem; ;
     font-weight: 700;
     color: #cae1f2;
     text-decoration: none;
@@ -133,7 +138,7 @@ p {
    -o-transition: all .4s ease-in-out;
 }
 #closeGame {
-    font-size: 20px;
+    font-size: 2rem; 
     font-weight: 700;
     color: #c9172b;
     text-decoration: none;
@@ -158,7 +163,7 @@ p {
 
 /*APPLYING STYLE TO SOCIAL LINKS ICONS*/
 .social-links i {
-    font-size: 20px;
+    font-size: 2rem;
     border: 3px solid #641220;
     color: #e71d36;
     border-radius: 5px;
@@ -181,7 +186,7 @@ p {
 /*COPYRIGHT TEXT STYLING*/
 .copyright {
     text-align: center;
-    font-size: 20px;
-    color: #932203;
+    font-size: 2rem; 
+    color: #560c03;
     margin-top: 10px;
 }
