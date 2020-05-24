@@ -30,7 +30,7 @@ body {
 
 h3, h4, h5 {
     font-weight: 700;
-    margin: 2rem 1.5rem;
+    margin: 1.5rem 1rem;
 }
 
 h3 {
@@ -50,7 +50,7 @@ h5 {
 
 p {
     font-size: 1.5rem;
-    color: #0000ec;
+    color: #1d44b0;
     margin: 1rem;
 }
 
@@ -67,22 +67,22 @@ p {
     position: fixed;
     justify-content: center;
     align-items: center;
-    padding-top: 9rem;
+    padding-top: 7rem;
     width: 100%;
     height: 100%;
+    overflow: scroll;
     left: 0;
     top: 0;
-    overflow: auto;
-    background-color: rgba(248, 15, 69, 0.5);
+    background-color: rgb(8, 13, 31);
 }
 
 .how-to-play-content {
     position: relative;
-    background-color: #9ef2fb;
+    background-color: #f4fdfd;
     width: 50%;
     padding: 0;
     margin: auto;
-    border: 0.5rem solid #c2fe55;
+    border: 0.2rem solid #d81a31;
     animation-name: animatetop;
     animation-duration: 0.4s;
 }
@@ -101,7 +101,7 @@ p {
 .how-to-play-tips li {
     font-size: 1.8rem; 
     font-weight: 700;
-    color: #588a21;
+    color: #021f2e;
     margin: 1rem 2.5rem;
 }
 
@@ -113,7 +113,7 @@ p {
     text-decoration: none;
     padding: 1rem;
     border-radius: 0.5rem;
-    margin: 1rem;
+    margin: 0.5rem;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
@@ -156,7 +156,7 @@ p {
     border: 0.3rem solid #641220;
     color: #e71d36;
     border-radius: 0.5rem;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     padding: 0.4rem;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
