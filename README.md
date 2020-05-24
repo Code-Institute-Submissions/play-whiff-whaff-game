@@ -36,8 +36,8 @@ color to make it more visible;
 
 
 ## Wireframes
-I used [**Balsamiq**](https://balsamiq.com/) to create the wireframes.
-The can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/wireframes/wireframes.pdf)
+I used [**Balsamiq**](https://balsamiq.com/) to create the **wireframes** and to provide a clean looking design layout.
+They can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/wireframes/wireframes.pdf).
 
 ## Features
 1. The main section contains intro text ('Welcome to the World of Arcade Games!'). The background-color has been applied
@@ -78,9 +78,9 @@ I have used the following technologies to complete the project:
 
 6. ### [Favicon](https://www.favicon-generator.org/)
 
-6. ### jQuery
+6. ### [jQuery](https://cdnjs.com/libraries/jquery)
 
-7. ### Popper.js
+7. ### [Popper.js](https://cdnjs.com/libraries/popper.js)
    
 ## Other external support used to build the project
 
@@ -94,7 +94,7 @@ I have used the following technologies to complete the project:
 
 5. [**Coolors**](https://coolors.co/)
 
-6. **Unicorn Revealer**
+6. [**Unicorn Revealer**](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln)
 
 
 ## Project Testing
