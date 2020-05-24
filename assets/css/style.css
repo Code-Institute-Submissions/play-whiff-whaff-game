@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;700&display=swap');
 
 
-/*STYLING HTML/BODY & HEADINGS*/
+/*STYLING HTML/BODY & HEADINGS & PARAGRAPH*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,8 +30,9 @@ body {
 
 h3, h4, h5 {
     font-weight: 700;
-    margin: 20px 15px;
+    margin: 2rem 1.5rem;
 }
+
 h3 {
     font-size: 3rem;
     color: #e32e44;
@@ -50,23 +51,23 @@ h5 {
 p {
     font-size: 1.5rem;
     color: #0000ec;
-    margin: 10px;
+    margin: 1rem;
 }
 
 /*CANVAS STYLING*/
 #gameCanvas {
     display: none;
-    border: 10px solid #ff489f;
-    margin: 25px 25px;
+    border: 0.5rem solid #ff489f;
+    margin: 2rem 1.5rem;
 }
 
-/*STYLING RULES MODAL*/
-#rulesModal {
+/*STYLING HOW TO PLAY MODAL*/
+#howToPlayModal {
     display: none;
     position: fixed;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 9rem;
     width: 100%;
     height: 100%;
     left: 0;
@@ -75,107 +76,94 @@ p {
     background-color: rgba(248, 15, 69, 0.5);
 }
 
-.rules-content {
+.how-to-play-content {
     position: relative;
     background-color: #9ef2fb;
     width: 50%;
-    margin: auto;
     padding: 0;
-    border: 4px solid #c2fe55;
+    margin: auto;
+    border: 0.5rem solid #c2fe55;
     animation-name: animatetop;
     animation-duration: 0.4s;
 }
 
-/*STYLING ANIMATION*/
+/*STYLING MODAL ANIMATION*/
 @keyframes animatetop {
-    from {top: -300px; opacity: 0}
+    from {top: -25rem; opacity: 0}
     to {top: 0; opacity: 1}
 }
 
 @-webkit-keyframes animatetop {
-    from {top: -300px; opacity: 0}
+    from {top: -25rem; opacity: 0}
     to {top: 0; opacity: 1}
 }
-/*ADDING STYLE TO RULES LIST*/
-.list-rules li {
+/*STYLING HOW TO PLAY TIPS LIST*/
+.how-to-play-tips li {
     font-size: 1.8rem; 
     font-weight: 700;
     color: #588a21;
-    margin: 15px 25px 15px 25px;
+    margin: 1rem 2.5rem;
 }
 
-
-/*STYLING OPEN & CLOSE BUTTONS*/
-#gameRules {
+/*STYLING GAME HOW TO PLAY/OPEN/CLOSE BUTTONS*/
+.game-buttons a {
     font-size: 2rem; 
     font-weight: 700;
-    color: #5200cf;
     text-decoration: none;
-    padding: 8px;
-    background-color: #17ffce;
-    border: 3px solid #c41455;
-    border-radius: 5px;
-    margin: 15px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
    -o-transition: all .4s ease-in-out;
+}
+
+#howToPlayGame {
+    color: #5200cf;
+    background-color: #17ffce;
+    border: 0.3rem solid #c41455;
+    
 }
 
 #openGame {
-    font-size: 2rem; ;
-    font-weight: 700;
     color: #cae1f2;
-    text-decoration: none;
-    padding: 8px;
     background-color: #dd73ff;
-    border: 3px solid #c56f14;
-    border-radius: 5px;
-    margin: 15px;
-    transition: all .4s ease-in-out;
-   -moz-transition: all .4s ease-in-out;
-   -webkit-transition: all .4s ease-in-out;
-   -o-transition: all .4s ease-in-out;
+    border: 0.3rem solid #c56f14;
 }
+
 #closeGame {
-    font-size: 2rem; 
-    font-weight: 700;
     color: #c9172b;
-    text-decoration: none;
-    padding: 8px;
     background-color: #00ff00;
-    border: 3px solid #9414ff;
-    border-radius: 5px;
-    margin: 15px;
+    border: 0.3rem solid #9414ff;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
    -o-transition: all .4s ease-in-out;
 }
 
-#gameRules:hover,
-#openGame:hover,
-#closeGame:hover {
+#howToPlayGame:hover,
+#openGame:hover, #closeGame:hover {
     background-color: #ff489f;
-    border: 3px solid #17ffce;
+    border: 0.3rem solid #17ffce;
     color: #fad345;
 }
 
-/*APPLYING STYLE TO SOCIAL LINKS ICONS*/
+/*STYLING SOCIAL LINKS ICONS*/
 .social-links i {
     font-size: 2rem;
-    border: 3px solid #641220;
+    border: 0.3rem solid #641220;
     color: #e71d36;
-    border-radius: 5px;
-    margin-top: 45px;
-    padding: 3px;
+    border-radius: 0.5rem;
+    margin-top: 3.5rem;
+    padding: 0.4rem;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
    -o-transition: all .4s ease-in-out;
 }
 
-/*APPLYING INDIVIDUAL COLOR TO SOCIAL MEDIA LINKS ICONS WHEN USING HOVER*/
+/*ADDING HOVER SELECTOR TO SOCIAL-LINKS ICONS*/
 .fab:hover {
     background-color: #2fffd8;
     -webkit-transform: scale(1.3);
@@ -183,10 +171,10 @@ p {
             transform: scale(1.3);
 }
 
-/*COPYRIGHT TEXT STYLING*/
+/*STYLING COPYRIGHT TEXT*/
 .copyright {
     text-align: center;
     font-size: 2rem; 
     color: #560c03;
-    margin-top: 10px;
+    margin: 0.5rem;
 }

@@ -12,14 +12,14 @@
 <title>Whiff-Whaff</title>
 </head>
 <body>
-<!--ADDING INTRO TEXT & RULES INFO-->
- <div class="container-fluid">
+<!--ADDING INTRO TEXT & HOW TO PLAY INFO-->
+ <section class="container-fluid">
     <h3>Welcome to the World of Arcade Games!</h3>
     <h4>We present you a Ping-Pong game!</h4>
-    <div id="rulesModal" class="modal">
-        <div class="rules-content">
+    <div id="howToPlayModal" class="modal">
+        <div class="how-to-play-content">
         <h5>How to play?</h5>
-            <ul class="list-rules">
+            <ul class="how-to-play-tips">
                 <li>control the paddle by moving vertically accross
                 the left side of the screen (the right side is controled
                 by computer)</li>
@@ -28,21 +28,23 @@
                 to return the ball to the other side</li>
                 <li>stay focused as the ball's speed increases with the number of hits</li>
             </ul>
-            <p>To close the List of Rules click/tap anywhere outside the box!</p>
+            <p>To close the tips' list click/tap anywhere outside the box!</p>
         </div>
     </div>
-</div>
+</section>
 <!--CREATING GAME CANVAS-->
+<section>
     <canvas id="gameCanvas"></canvas>
-<!--ADDING MODAL WITH SET OF GAME RULES-->
-
+</section>
 <!--ADDING SOCIAL-LINKS AND COPYRIGHT TEXT-->
-<div class="container-fluid">
+<section class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <a id="gameRules" href="#" data-toggle="modal" data-target="#rulesModal">RULES</a>
+            <div class="game-buttons">
+            <a id="howToPlayGame" href="#" data-toggle="modal" data-target="#howToPlayModal">RULES</a>
             <a id="openGame" href="#">START</a>
             <a id="closeGame" href="#">CLOSE</a>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -58,7 +60,8 @@
         <p class="copyright">© 2020 Website designed by Kris Kempa</p>
         </div>
     </div>
-</div>
+</section>
+<!--SCRIPTS ADDED TO ENSURE THE WEBSITE IS PROPERLY LOADED-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
