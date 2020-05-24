@@ -31,8 +31,8 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
     <img src="wireframes/color-pallete/ball.png" alt="ball">
 
         
-*   a single-type of font **Inconsolata** has been used to keep the text consistent through the website content, and the 
-color to make it more visible;
+*   a single-type of font [**Inconsolata**](https://fonts.google.com/specimen/Inconsolata?query=) 
+has been used to keep the text consistent through the website content, and the color to make it more visible;
 
 
 ## Wireframes
