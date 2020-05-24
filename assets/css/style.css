@@ -107,6 +107,7 @@ p {
 
 /*STYLING GAME HOW TO PLAY/OPEN/CLOSE BUTTONS*/
 .game-buttons a {
+    display: inline;
     font-size: 2rem; 
     font-weight: 700;
     text-decoration: none;
