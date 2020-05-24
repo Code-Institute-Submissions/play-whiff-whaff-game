@@ -1,12 +1,8 @@
-<img src="wireframes/responsive/responsive.png" alt="responsive">
+<img src="wireframes/responsive-design/responsive.png" alt="responsive">
 
 **Ping - Pong** also known as **Whiff-Whaff** is a table tennis game where two or four players hit a lightweight ball back an forth across a table divided with a net. 
 Players use small rackets and must allow a ball played toward them to bounce one time on their side of the table. They must hit it back to the opposite side. 
 The point is scored when the player fails to return the ball. It seems to be an easy game, but **Ping-Pong** is considered as a fast-paced challenge and requires quick reactions. 
-
-## Demo 
-The website demo can be found [**here**](https://krisk1978.github.io/play-whiff-whaff-game/).
-## UX
 
 ### Project goal 
 The main purpose for creating this website was to deliver a game which will be fun to play at every age. This could be a demanding task nowadays, especially
@@ -17,7 +13,7 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
 ### Designer's strategy
 * to design a basic but enjoyable game for a wide range of users at any age;
 
-* to apply minimal text, the website user is not overwhelmed with the content and simply not lose interest;
+* to apply minimal text, so the website user is not overwhelmed with the content and simply does not lose interest;
 
 ### Design elements
 *   a color pallete has been used to the specific elements (body, canvas, etc.) of the project to achieve an *'eye-catching'* effect;
@@ -40,7 +36,8 @@ color to make it more visible;
 
 
 ## Wireframes
-[**GAME**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/wireframes/Game.pdf)
+I used [**Balsamiq**](https://balsamiq.com/) to create the wireframes.
+The can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/wireframes/wireframes.pdf)
 
 ## Features
 1. The main section contains intro text ('Welcome to the World of Arcade Games!'). The background-color has been applied
