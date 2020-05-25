@@ -1,20 +1,11 @@
-/** 
- * Selects canvas elements
- */  
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
-/**
- * Selects open game/close game buttons
- */
-const startButton = document.getElementById('openGame');
-const closeButton = document.getElementById('closeGame');
-/** 
- * Declares canvas width & height
- */
 cvs.width = 600;
 cvs.height = 300;
+const startButton = document.getElementById('openGame');
+const closeButton = document.getElementById('closeGame');
 /**
- * Declares game elements
+ * Declares game elements: Player 1(ping), Player 2(pong), game ball and game net.
  */
 const ping = {
     x: 0,
@@ -48,17 +39,17 @@ const gameNet = {
     height: 10,
     color: '#ff489f'
 };
-/** 
- * Draws a playfield
+/**
+ * Draws the playfield where the game of Ping-Pong takes place.
  */
-let drawRect = (x, y, w, h, color) => {
+const drawPlayField = (x, y, w, h, color) => {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
 };
 /**
- * Draws a ball 
- */ 
-let drawCircle = (x, y, r, color) => {
+ * Draws the game ball.
+ */
+const drawBall = (x, y, r, color) => {
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI*2);
     ctx.fillStyle = color;
@@ -66,50 +57,49 @@ let drawCircle = (x, y, r, color) => {
     ctx.fill();
 };
 /**
- * Draws the game score
+ * Draws the score.
  */
-let drawText = (text, x, y, color) => {
+const drawScore = (text, x, y, color) => {
     ctx.font = '45px Inconsolata, monospace';
     ctx.fillStyle = color;
     ctx.fillText(text, x, y);
 };
 /**
- * Draws Player 1 
- */ 
-let drawPlayerOne = () => {
+ * Draws Player 1 (ping).
+ */
+const drawPlayerOne = () => {
     ctx.fillStyle = ping.color;
     ctx.fillRect(ping.x, ping.y, ping.width, ping.height);
 };
 /**
- * Draws Player 2 (pong)
+ * Draws Player 2 (pong).
  */
-let drawPlayerTwo = () => {
+const drawPlayerTwo = () => {
     ctx.fillStyle = pong.color;
     ctx.fillRect(pong.x, pong.y, pong.width, pong.height);
 };
 /**
- * Draws the game net 
+ * Draws the game net.
  */
-let drawGameNet = () => {
+const drawGameNet = () => {
     for(let i = 0; i <= cvs.height; i+=15) {
-        drawRect(gameNet.x, gameNet.y + i, gameNet.width, gameNet.height, gameNet.color);
-    };
+        drawPlayField(gameNet.x, gameNet.y + i, gameNet.width, gameNet.height, gameNet.color);
+    }
 };
 /**
- * Draws game elements - play-field, players, ball, net, score
+ * Creates all game elements - play-field, players, ball, net, score.
  */ 
-let callIn = () => {
-    drawRect(0, 0, cvs.width, cvs.height, '#38cabd');
-    drawCircle(ball.x, ball.y, ball.radius, ball.color);
-    drawText(ping.score, cvs.width/4, cvs.height/8, '#fdfffc');
-    drawText(pong.score, 3*cvs.width/4, cvs.height/8,'#641220');
+const drawGameElements = () => {
+    drawPlayField(0, 0, cvs.width, cvs.height, '#38cabd');
+    drawBall(ball.x, ball.y, ball.radius, ball.color);
+    drawScore(ping.score, cvs.width/4, cvs.height/8, '#fdfffc');
+    drawScore(pong.score, 3*cvs.width/4, cvs.height/8,'#641220');
     drawPlayerOne();
     drawPlayerTwo();
     drawGameNet();
 };
-
 /**
- * Initiates user controls 
+ * Initiates player moves 
  */
 cvs.addEventListener('mousemove', controlMove);
 /**
@@ -118,11 +108,11 @@ cvs.addEventListener('mousemove', controlMove);
 function controlMove(e) {
     let rect = cvs.getBoundingClientRect();
     ping.y = e.clientY - rect.top - ping.height/2;
-};
+}
 /**
- * Detects collision walls  
+ * The ball bounces back when hits the playfield walls  
  */
-let detectionWalls = (b, p) => {
+const detectionWalls = (b, p) => {
     b.top = b.y - b.radius;
     b.bottom = b.y + b.radius;
     b.left = b.x - b.radius;
@@ -133,12 +123,11 @@ let detectionWalls = (b, p) => {
     p.right = p.x + p.width;
     return b.right > p.left && b.bottom > p.top && b.left < p.right && 
     b.top < p.bottom;
-
 };
 /**
  * Updates player's position/score/ball's speed & resets the ball.
  */
-let updateGameElements = () => {
+const updateGameElements = () => {
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
@@ -147,7 +136,7 @@ let updateGameElements = () => {
 
     if(ball.y + ball.radius > cvs.height || ball.y - ball.radius < 0) {
         ball.velocityY = -ball.velocityY;
-    };
+    }
 
     let player = (ball.x < cvs.width/2) ? ping : pong;
 
@@ -159,7 +148,7 @@ let updateGameElements = () => {
         ball.velocityX = direction * ball.speed * Math.cos(angleRad);
         ball.velocityY = ball.speed * Math.sin(angleRad);
         ball.speed += 0.5;
-    };
+    }
 
     if(ball.x - ball.radius < 0) {
         pong.score++;
@@ -168,44 +157,36 @@ let updateGameElements = () => {
     }else if(ball.x + ball.radius > cvs.width) {
         ping.score++;
         resetBall();
-    };
+    }
 };
 /**
  * Resets the ball.
  */
-let resetBall = () => {
+const resetBall = () => {
         ball.x = cvs.width/2;
         ball.y = cvs.height/2;
         ball.speed = 5;
         ball.velocityX = -ball.velocityX;
 };
 /**
- * Initiates open/close buttons
+ * Opens the playfield where the game of Ping-Pong takes place.
  */
 startButton.onclick = function() {
     cvs.style.display = 'block';
 };
+
+/**
+ * Closes the playfield and returns the user to intro page.
+ */
     closeButton.onclick = function() {
     cvs.style.display = 'none';
 }; 
-
 /**
- * Initiates the game.
+ * Starts the game.
  */
-let playGame = () => {
-    callIn();
+const playGame = () => {
+    drawGameElements();
     updateGameElements();
 };
 const framePerSecond = 50;
 setInterval(playGame, 1000/framePerSecond);
-
-
-
-
-
-
-
-
-
-
-
