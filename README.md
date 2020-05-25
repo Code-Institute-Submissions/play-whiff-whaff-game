@@ -40,10 +40,21 @@ I used [**Balsamiq**](https://balsamiq.com/) to create the **wireframes** and to
 They can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/wireframes/wireframes.pdf).
 
 ## Features
-1. The main section contains intro text ('Welcome to the World of Arcade Games!'). The background-color has been applied
-to the body's element, to make it 'eye-catching'.
+1. The main section contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!** The background-color has been applied
+to the body's element, to make it 'eye-catching'. There are two buttons called **HOW TO PLAY?** and **START**. The **HOW TO PLAY BUTTON** once clicked/tapped opens a modal 
+with a list of game tips. It is a short list of instructions explaining how to play the game and what needs to be done to score a point. 
+The **START** button once used takes the user to actual gamefield where a round of **Ping-Pong** game takes place. The buttons' background color changes when the *hover* is 
+used. 
 
-2. The canvas element has been used to build the game board and to render 2D shapes. The game board features the following elements:
+2. There are **Social-links** added into the website content which give the user opportunity to get some more info about the website designer:
+
+*   both [**LinkedIn**](https://www.linkedin.com/in/kris-kempa-77a752162/) and [**GitHub**](https://github.com/KrisK1978) are active and take the user to external websites;
+
+*   **Instagram** and **Twitter** icons embedded just for visual effect.
+
+3. The **copyright** text added below the social-links icons to confirm who created the website and when it was built. 
+
+4. The canvas element has been used to build the game board and to render 2D shapes. The game board features the following elements:
 
 * **playfield** element built using draw methods. It is divided in two fields by a net which helps to see the *player* (left side) and the *opponent* 
 (computer - right side) locations;
@@ -60,9 +71,13 @@ The collision detection function has been used, so the ball bounces back from th
 
 * **score** - the number changes when the player/opponent scores a point. Different colors been used to show either player's or opponent's number of points. 
 
+
+
 ## Features to be implemented in the future
 1. I would like to add player's statistics by displaying the number of wins/defeats and points scored in total. This would be built into a leader's board available
 once clicked on the button/tab called **Check The Leaderboard**.
+
+2. I would like to implement a **RESET** button which will reset the game and the score. 
 
 ## Technologies used 
 I have used the following technologies to complete the project:
