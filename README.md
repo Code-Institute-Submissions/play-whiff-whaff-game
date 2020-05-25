@@ -56,20 +56,20 @@ game and returns the user to main page. The user can go back to the game when **
 
 4. The canvas element has been used to build the game board and to render 2D shapes. The game board features the following elements:
 
-* **playfield** element built using draw methods. It is divided in two fields by a net which helps to see the *player* (left side) and the *opponent* 
+* **playfield** element built using draw methods. It is divided in two fields by a net which helps to see the **Player1** (left side) and the **Player 2** 
 (computer - right side) locations;
 
-* **players** created using one of the canvas draw methods with different colors applied, so the players can be 
-easily recognised. Both player/opponent can move up and down to be able to hit the ball. Basic AI function has been added to control the 
-opponent's (computer) movement. 
+* **players** created using one of the canvas draw methods with different colors applied, so the players can be easily recognised. 
+Both **Player 1** and **Player 2** can move up and down to be able to hit the ball. Basic AI function has been added to control the 
+Player 2 (computer) movement. 
 
 * **net** built using a canvas draw method with a vivid color applied to show player's and opponent's side of the playfield.
 
 * **ball** created using a draw method which moves from one side of the playfield to another when the player or the opponent bounces it back.
 The ball's speed depends on the number of hits. If the number of player's hits increases the ball's speed increments too.
-The collision detection function has been used, so the ball bounces back from the wall (if hit by a player/opponent) within playfield area. 
+The collision detection function has been used, so the ball bounces back from the wall (if hit by a Player 1 or Player 2) within playfield area. 
 
-* **score** - the number changes when the player/opponent scores a point. Different colors been used to show either player's or opponent's number of points. 
+* **score** - the number changes when the players score a point. Different colors been used to show either Player 1 or Player 2 number of points. 
 
 
 ## Features to be implemented in the future
