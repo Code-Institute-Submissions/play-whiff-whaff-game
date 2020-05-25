@@ -83,10 +83,11 @@ They icons' scale and the background color change when the user clicks/taps on t
 [**Unicorn Revealer**](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln). 
 
 2. I was experiencing a problem with drawing and placing the **net** in the middle of the playfield. I managed to resolve this issue by testing
-different function scenarios and finding the function which drew the net exactly where I wanted. 
+different function scenarios and finding the one which drew the net exactly where I wanted. 
 
 
 **Additional Testing**
+
 I have asked my family members, friends and fellow [**Code Institute**](https://codeinstitute.net/) students to test and review my website. 
 I was advised the game could have a leaderboard with the best scorer, number of wins and defeats and the **RESET GAME** button.
 These ideas were included in **Features to be implemented in the future** paragraph in [**README.md**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/README.md) file.
