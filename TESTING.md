@@ -39,8 +39,19 @@ moves which works efficiently on these devices.
     - the available social-media links are active and once an icon is clicked/tapped it will take the user 
     to the external websites where the information about the website's host can be found
 
-#### User's Testing Stories 
+#### Testing Stories 
 
+1. I was advised by my mentor the background colors for individual elements I initially used should be more vivid. I decided 
+to follow his suggestion and had changed it using [**Coolors**](https://coolors.co/) pallete. 
+
+2. It was suggested by one of the test-users a **RESET GAME** button could be built in, so the game users would have a chance to 
+re-start the game anytime they want and the game result will reset too. I decided to implement this feature in the future.
+
+
+#### Bugs 
+
+1. I came across an issue related to the overflow on my webiste while creating it. I found the solution to debug it using 
+[**Unicorn Revealer**](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln). 
 
 
 **Additional Testing**

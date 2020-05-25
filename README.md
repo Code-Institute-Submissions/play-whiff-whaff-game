@@ -43,8 +43,8 @@ They can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/
 1. The main section contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!** The background-color has been applied
 to the body's element, to make it 'eye-catching'. There are two buttons called **HOW TO PLAY?** and **START**. The **HOW TO PLAY BUTTON** once clicked/tapped opens a modal 
 with a list of game tips. It is a short list of instructions explaining how to play the game and what needs to be done to score a point. 
-The **START** button once used takes the user to actual gamefield where a round of **Ping-Pong** game takes place. The buttons' background color changes when the *hover* is 
-used. 
+The **START** button once used takes the user to actual gamefield where a round of **Ping-Pong** game takes place. There is also a button called **CLOSE** which closes the 
+game and returns the user to main page. The user can go back to the game when **START** button is used again. The buttons' background color changes when the *hover* is used. 
 
 2. There are **Social-links** added into the website content which give the user opportunity to get some more info about the website designer:
 
@@ -70,7 +70,6 @@ The ball's speed depends on the number of hits. If the number of player's hits i
 The collision detection function has been used, so the ball bounces back from the wall (if hit by a player/opponent) within playfield area. 
 
 * **score** - the number changes when the player/opponent scores a point. Different colors been used to show either player's or opponent's number of points. 
-
 
 
 ## Features to be implemented in the future
