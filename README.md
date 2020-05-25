@@ -63,7 +63,7 @@ game and returns the user to main page. The user can go back to the game when **
 Both **Player 1** and **Player 2** can move up and down to be able to hit the ball. Basic AI function has been added to control the 
 Player 2 (computer) movement. 
 
-* **net** built using a canvas draw method with a vivid color applied to show player's and opponent's side of the playfield.
+* **net** built using a canvas draw method with a vivid color applied to clearly show the Player 1 and Player 2 side of the playfield.
 
 * **ball** created using a draw method which moves from one side of the playfield to another when the player or the opponent bounces it back.
 The ball's speed depends on the number of hits. If the number of player's hits increases the ball's speed increments too.
