@@ -49,7 +49,7 @@ const gameNet = {
     color: '#ff489f'
 };
 /** 
- * Draws a play-field
+ * Draws a playfield
  */
 let drawRect = (x, y, w, h, color) => {
     ctx.fillStyle = color;
@@ -185,9 +185,10 @@ let resetBall = () => {
 startButton.onclick = function() {
     cvs.style.display = 'block';
 };
-closeButton.onclick = function() {
+    closeButton.onclick = function() {
     cvs.style.display = 'none';
-};
+}; 
+
 /**
  * Initiates the game.
  */

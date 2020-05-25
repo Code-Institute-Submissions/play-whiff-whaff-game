@@ -133,6 +133,7 @@ p {
 }
 
 #closeGame {
+    display: hidden;
     color: #c9172b;
     background-color: #00ff00;
     border: 0.3rem solid #9414ff;

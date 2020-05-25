@@ -16,10 +16,9 @@ validation services to check the project's content. The following tools were use
 
 
 I knew my project needed to be fully responsive but I was aware it can be difficult to achieve that using a canvas element. 
-I decided to take a slightly different approach and inform the user that the game functionality can be fully achieved using
+I decided to take a slightly different approach due to game's vision and inform the user that the game functionality can be fully achieved using
 devices with higher resolution i.e. laptops/desktops. This is also because I used **mousemove** event to control player's 
 moves which works efficiently on these devices. 
-
 
 ### User Stories
 
@@ -44,18 +43,51 @@ moves which works efficiently on these devices.
 1. I was advised by my mentor the background colors for individual elements I initially used should be more vivid. I decided 
 to follow his suggestion and had changed it using [**Coolors**](https://coolors.co/) pallete. 
 
-2. It was suggested by one of the test-users a **RESET GAME** button could be built in, so the game users would have a chance to 
+2. It was suggested by one of the test-users that a **RESET GAME** button could be built in, so the game users would have a chance to 
 re-start the game anytime they want and the game result will reset too. I decided to implement this feature in the future.
 
 
+### Features testing
+
+When the user visits the page for the first time she/he will be presented with a vivid background color which attracts user's attention
+but it is not aggressive. The users will notice a limited text content was embedded which makes the website's experience less overwhelming
+which can be 
+
+#### Elements tested:
+
+* **HOW TO PLAY?** button - when the user clicks/taps the button, it opens a modal which contains a list of the game tips/suggestions.
+This was implemented to ensure the user will not be confused with how the game should be played. The modal closes when the user clicks/taps
+anywhere outside the box. There is a small print text added which notifies the user how the modal can be closed. 
+
+* **START** button - once clicked/tapped, it opens the actual game playfield and the user can enjoy a round of **Ping-Pong**.
+
+* **Playfield** - the user is able to move the paddle up and down to hit the ball and score the point. The user notices the speed of the ball increases
+with the number of the hits. The user can see the score changes once the point is earned. 
+
+* **CLOSE** button - the user can click/tap on the button which closes the game completely and brings the user back to the intro page. 
+
+* **Social-Links** icons - the user can access an additional information about the designer by using the following icons:
+
+    * [**LinkedIn**](https://www.linkedin.com/in/kris-kempa-77a752162/)
+    * [**GitHub**](https://github.com/KrisK1978)
+
+These icons redirect the user to external websites where other details can be found about the website's creator. 
+
+* **Instagram** and **Twitter** icons were used for visual effect and are not active. 
+
+They icons' scale and the background color change when the user clicks/taps on them. 
+
 #### Bugs 
 
-1. I came across an issue related to the overflow on my webiste while creating it. I found the solution to debug it using 
+1. I came across an issue related to the overflow on my website while creating it. I found the solution to debug it using 
 [**Unicorn Revealer**](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln). 
+
+2. I was experiencing a problem with drawing and placing the **net** in the middle of the playfield. I managed to resolve this issue by testing
+different function scenarios and finding the function which drew the net exactly where I wanted. 
 
 
 **Additional Testing**
-I have asked my family members, friends and fellow Code Institute students to test and review my website. I was 
-adviced the game could have a leaderboard with the best scorer, number of wins and defeats. This idea would be included 
-in **Features to be implemented in the future** paragraph in [**README.md**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/README.md) file.
+I have asked my family members, friends and fellow [**Code Institute**](https://codeinstitute.net/) students to test and review my website. 
+I was advised the game could have a leaderboard with the best scorer, number of wins and defeats and the **RESET** button.
+These ideas were included in **Features to be implemented in the future** paragraph in [**README.md**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/README.md) file.
 
