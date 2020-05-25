@@ -76,7 +76,7 @@ The collision detection function has been used, so the ball bounces back from th
 1. I would like to add player's statistics by displaying the number of wins/defeats and points scored in total. This would be built into a leader's board available
 once clicked on the button/tab called **Check The Leaderboard**.
 
-2. I would like to implement a **RESET** button which will reset the game and the score. 
+2. I would like to implement a **RESET GAME** button which will reset the game and the score. 
 
 ## Technologies used 
 I have used the following technologies to complete the project:

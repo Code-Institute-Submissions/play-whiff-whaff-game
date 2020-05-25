@@ -88,6 +88,6 @@ different function scenarios and finding the function which drew the net exactly
 
 **Additional Testing**
 I have asked my family members, friends and fellow [**Code Institute**](https://codeinstitute.net/) students to test and review my website. 
-I was advised the game could have a leaderboard with the best scorer, number of wins and defeats and the **RESET** button.
+I was advised the game could have a leaderboard with the best scorer, number of wins and defeats and the **RESET GAME** button.
 These ideas were included in **Features to be implemented in the future** paragraph in [**README.md**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/README.md) file.
 
