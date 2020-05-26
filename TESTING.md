@@ -16,9 +16,10 @@ validation services to check the project's content. The following tools were use
 
 
 I knew my project needed to be fully responsive but I was aware it can be difficult to achieve that using a canvas element. 
-I decided to take a slightly different approach due to game's vision and inform the user that the game functionality can be fully achieved using
+I decided to take a slightly different approach and inform the user that the game functionality can be fully achieved using
 devices with higher resolution i.e. laptops/desktops. This is also because I used **mousemove** event to control player's 
-moves which works efficiently on these devices. 
+moves which works efficiently on these devices. The game can be still played on the smaller devices but controlling the player's 
+moves is more difficult.
 
 ### User Stories
 
@@ -94,6 +95,6 @@ different function scenarios and finding the one which drew the net exactly wher
 **Additional Testing**
 
 I have asked my family members, friends and fellow [**Code Institute**](https://codeinstitute.net/) students to test and review my website. 
-I was advised the game could have a leaderboard with the best scorer, number of wins and defeats and the **RESET GAME** button.
+I was advised the game could have a leaderboard with the best scorer, number of wins and defeats, the **RESET GAME** button and sounds effects.
 These ideas were included in **Features to be implemented in the future** paragraph in [**README.md**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/README.md) file.
 

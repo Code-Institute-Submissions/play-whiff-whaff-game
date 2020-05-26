@@ -1,10 +1,12 @@
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
+
 cvs.width = 600;
 cvs.height = 300;
 
+
 /**
- * Selects Start & Close buttons
+ * Selects Start & Close buttons which opens and closes the game.
  */
 const startButton = document.getElementById('openGame');
 const closeButton = document.getElementById('closeGame');
@@ -93,7 +95,7 @@ const drawGameNet = () => {
 /**
  * Creates all game elements - play-field, players, ball, net, score.
  */ 
-const drawGameElements = () => {
+let drawGameElements = () => {
     drawPlayField(0, 0, cvs.width, cvs.height, '#38cabd');
     drawBall(ball.x, ball.y, ball.radius, ball.color);
     drawScore(ping.score, cvs.width/4, cvs.height/8, '#fdfffc');
@@ -116,7 +118,7 @@ function controlMove(e) {
 /**
  * The ball bounces back when hits the playfield walls  
  */
-const detectionWalls = (b, p) => {
+let ballBounce = (b, p) => {
     b.top = b.y - b.radius;
     b.bottom = b.y + b.radius;
     b.left = b.x - b.radius;
@@ -131,7 +133,7 @@ const detectionWalls = (b, p) => {
 /**
  * Updates player's position/score/ball's speed & resets the ball.
  */
-const updateGameElements = () => {
+updateGameElements = () => {
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
@@ -144,7 +146,7 @@ const updateGameElements = () => {
 
     let player = (ball.x < cvs.width/2) ? ping : pong;
 
-    if(detectionWalls(ball, player)){
+    if(ballBounce(ball, player)){
         let collidePoint = ball.y - (player.y + player.height/2);
         collidePoint = collidePoint/(player.height/2);
         let angleRad = collidePoint * Math.PI/4;
@@ -166,7 +168,7 @@ const updateGameElements = () => {
 /**
  * Resets the ball.
  */
-const resetBall = () => {
+let resetBall = () => {
         ball.x = cvs.width/2;
         ball.y = cvs.height/2;
         ball.speed = 5;
@@ -175,24 +177,20 @@ const resetBall = () => {
 /**
  * Opens the playfield where the game of Ping-Pong takes place.
  */
-startButton.onclick = function() {
+startButton.onclick = () => {
     cvs.style.display = 'block';
 };
-/**
- * Closes the playfield and returns the user to intro page.
- */
-    closeButton.onclick = function() {
+
+closeButton.onclick = () => {
     cvs.style.display = 'none';
-}; 
-/**
- * Starts the game.
+};
+/*
+ * Bring all game elements and starts the game.
  */
-const playGame = () => {
+let playGame = () => {
     drawGameElements();
     updateGameElements();
 };
 const framePerSecond = 50;
 setInterval(playGame, 1000/framePerSecond);
-
-
 

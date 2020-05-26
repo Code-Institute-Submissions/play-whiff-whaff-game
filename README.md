@@ -6,14 +6,14 @@ The point is scored when the player fails to return the ball. It seems to be an 
 
 ### Project goal 
 The main purpose for creating this website was to deliver a game that everyone will enjoy. This could be a demanding task nowadays, especially
-when we have an unlimited access to the digital world of sophisticated  and graphically involved games. Although **Whiff-Whaff** can be considered as very basic 
+when we have an unlimited access to the digital world of sophisticated and graphically involved games. Although **Whiff-Whaff** can be considered as very basic 
 and not complicated, however, it does not mean that simplicity can be boring. Playing this game demands swift reactions and even though it seems to be an easy task 
 to do, the play itself can be a relatively competitive challenge. My main aim and foremost priority was to give the users some good time. 
 
 ### Designer's strategy
-* to design a basic but enjoyable game for a wide range of users at any age;
+* to design a basic but enjoyable game for everyone;
 
-* to apply minimal text, so the website user is not overwhelmed with the content and simply does not lose interest;
+* to keep the text content to minimum, so the website user is not overwhelmed with it and simply does not lose interest;
 
 ### Design elements
 *   a color pallete has been used to the specific elements (body, canvas, etc.) of the project to achieve an *'eye-catching'* effect;
@@ -40,13 +40,42 @@ I used [**Balsamiq**](https://balsamiq.com/) to create the **wireframes** and to
 They can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/wireframes/wireframes.pdf).
 
 ## Features
-1. The website contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!**. The background-color has been applied
-to the body's element, to make it 'eye-catching'. There are two buttons called **HOW TO PLAY?** and **START**. The **HOW TO PLAY?** button once clicked/tapped opens a modal 
-with a list of game tips. It is a short list of instructions explaining how to play the game and what needs to be done to score a point. 
-The **START GAME** button once used takes the user to actual gamefield where a round of **Ping-Pong** game takes place. The playfield was built using **canvas** element.There is also a button called **CLOSE GAME** which closes the 
-game and returns the user to main page, however, the user can go back to the game when **START GAME** button is used again. The buttons' background color changes when the *hover* is used. 
 
-2. There are **Social-links** added into the website content which give the user opportunity to get some more info about the website designer:
+1. The website contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!**. The background-color has been applied
+to the body's element, to make it 'eye-catching'. 
+
+2. There are three buttons created:
+
+* **HOW TO PLAY?** - this button opens a modal with a list of game tips. It is a short list of instructions explaining
+how to play the game and what needs to be done to score a point. The modal closes when the user clicks/taps anywhere outside the box.
+
+* **START THE GAME** - this button takes the user to actual playfield where a round of **Ping-Pong** takes place.
+
+* **CLOSE THE GAME** - this button closes the game and returns the user to intro page. 
+
+**Additional buttons' details:**
+- the buttons' background color changes when the **hover** selector is used. 
+- the **START THE GAME** and **CLOSE THE GAME** buttons' display is set to **none** for the smaller devices between 319.98px width and 767.98px width.
+Media queries used to target these two buttons. 
+
+3.  The **canvas** element has been used to build the game board and to render 2D shapes. The game board features the following elements:
+
+* **playfield** created using drawing methods. It is divided in two fields by a net which helps to see the **Player1** (left side) and the **Player 2** 
+(computer - right side) locations;
+
+* **players** created using one of the canvas drawing methods with different colors applied, so the players can be easily recognised. 
+Both **Player 1** and **Player 2** can move up and down to be able to hit the ball. Basic AI function has been added to control the 
+Player 2 (computer) movement. 
+
+* **net** built using a canvas drawing method with a vivid color applied to clearly show the Player 1 and Player 2 side of the playfield.
+
+* **ball** created using a drawing method which moves from one side of the playfield to another when the player or the opponent bounces it back.
+The ball's speed depends on the number of hits. If the number of player's hits increases the ball's speed increments too.
+The collision detection function has been used, so the ball bounces back from the wall (if hit by a Player 1 or Player 2) within playfield area. 
+
+* **score** - the number changes when the players score a point. Different colors been used to show either Player 1 or Player 2 number of points.  
+
+4. There are **Social-links** added into the website content which give the user opportunity to get some more info about the website designer:
 
 *   both [**LinkedIn**](https://www.linkedin.com/in/kris-kempa-77a752162/) and [**GitHub**](https://github.com/KrisK1978) are active and take the user to external websites;
 
@@ -54,29 +83,14 @@ game and returns the user to main page, however, the user can go back to the gam
 
 3. The **copyright** text added below the social-links icons to confirm who created the website and when it was built. 
 
-4. The canvas element has been used to build the game board and to render 2D shapes. The game board features the following elements:
 
-* **playfield** element built using draw methods. It is divided in two fields by a net which helps to see the **Player1** (left side) and the **Player 2** 
-(computer - right side) locations;
-
-* **players** created using one of the canvas draw methods with different colors applied, so the players can be easily recognised. 
-Both **Player 1** and **Player 2** can move up and down to be able to hit the ball. Basic AI function has been added to control the 
-Player 2 (computer) movement. 
-
-* **net** built using a canvas draw method with a vivid color applied to clearly show the Player 1 and Player 2 side of the playfield.
-
-* **ball** created using a draw method which moves from one side of the playfield to another when the player or the opponent bounces it back.
-The ball's speed depends on the number of hits. If the number of player's hits increases the ball's speed increments too.
-The collision detection function has been used, so the ball bounces back from the wall (if hit by a Player 1 or Player 2) within playfield area. 
-
-* **score** - the number changes when the players score a point. Different colors been used to show either Player 1 or Player 2 number of points. 
 
 
 ## Features to be implemented in the future
 1. I would like to add player's statistics by displaying the number of wins/defeats and points scored in total. This would be built into a leader's board available
 once clicked on the button/tab called **Check The Leaderboard**.
 
-2. I would like to implement a **RESET GAME** button which will reset the game and the score. 
+2. I would like to implement a **RESET GAME** button which will reset the game and the score. Currently the game can be reset when the user reloads the website.
 
 3. I would like to add sound effects every time the player hits the ball and the ball touches the playfield walls. The sound effect would also be applied 
 each time a point is scored. 
