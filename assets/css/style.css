@@ -186,7 +186,6 @@ p {
     margin: 0.5rem;
 }
 
-
 /*HIDING THE START AND CLOSE THE GAME BUTTONS ON SMALL DEVICES*/
 @media (min-width: 319.98px) and (max-width: 767.98px) {
     #openGame,
@@ -195,10 +194,3 @@ p {
     }
  }
 
-/*DISPLAYING THE START AND CLOSE THE GAME BUTTONS ON BIGGER DEVICES*/
-@media (min-width: 768px) {
-    #openGame,
-    #closeGame {
-       visibility: visible;
-    }
-}

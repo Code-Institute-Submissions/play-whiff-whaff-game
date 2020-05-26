@@ -55,7 +55,9 @@ how to play the game and what needs to be done to score a point. The modal close
 * **CLOSE THE GAME** - this button closes the game and returns the user to intro page. 
 
 **Additional buttons' details:**
+
 - the buttons' background color changes when the **hover** selector is used. 
+
 - the **START THE GAME** and **CLOSE THE GAME** buttons' display is set to **none** for the smaller devices between 
 min-width of 319.98px width and max-width of 767.98px width. Media queries were used to target these two buttons. 
 
