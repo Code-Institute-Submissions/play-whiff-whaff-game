@@ -88,9 +88,7 @@ different function scenarios and finding the one which drew the net exactly wher
 3. While validating my JavaScript code in [**JS Hint**](https://jshint.com/) I received the following warnings:
 
 *   *const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)*
-*   *arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6')*
-
-They do not affect the game functionality.
+*   *arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6')* - they do not affect the game functionality.
 
 
 **Additional Testing**

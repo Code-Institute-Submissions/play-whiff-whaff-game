@@ -113,6 +113,8 @@ I have used the following technologies to complete the project:
 
 6. [**Unicorn Revealer**](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln)
 
+7. [**Autoprefixer CSS**](https://autoprefixer.github.io/)
+
 
 ## Project Testing
 The project testing details can be found in [**TESTING.md**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/TESTING.md) file.
