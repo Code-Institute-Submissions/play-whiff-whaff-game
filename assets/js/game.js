@@ -2,6 +2,10 @@ const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
 cvs.width = 600;
 cvs.height = 300;
+
+/**
+ * 
+ */
 const startButton = document.getElementById('openGame');
 const closeButton = document.getElementById('closeGame');
 /**
@@ -190,3 +194,6 @@ const playGame = () => {
 };
 const framePerSecond = 50;
 setInterval(playGame, 1000/framePerSecond);
+
+
+

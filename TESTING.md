@@ -85,6 +85,13 @@ They icons' scale and the background color change when the user clicks/taps on t
 2. I was experiencing a problem with drawing and placing the **net** in the middle of the playfield. I managed to resolve this issue by testing
 different function scenarios and finding the one which drew the net exactly where I wanted. 
 
+3. While validating my JavaScript code in [**JS Hint**](https://jshint.com/) I received the following warnings:
+
+*   *const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)*
+*   *arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6')*
+
+They do not affect the game functionality.
+
 
 **Additional Testing**
 
