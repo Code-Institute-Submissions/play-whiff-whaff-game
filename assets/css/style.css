@@ -61,6 +61,7 @@ p {
     display: none;
     border: 0.5rem solid #ff489f;
     margin: 0.8rem 0.5rem;
+    resize:both;
 }
 
 /*STYLING HOW TO PLAY MODAL*/

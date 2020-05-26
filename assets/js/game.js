@@ -1,6 +1,6 @@
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
-cvs.width = 400;
+cvs.width = 380;
 cvs.height = 250;
 /**
  * Selects Start & Close buttons which opens and closes the game.
