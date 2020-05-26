@@ -5,7 +5,7 @@ Players use small rackets and must allow a ball played toward them to bounce one
 The point is scored when the player fails to return the ball. It seems to be an easy game, but **Ping-Pong** is considered as a fast-paced challenge and requires quick reactions. 
 
 ### Project goal 
-The main purpose for creating this website was to deliver a game which will be fun to play at every age. This could be a demanding task nowadays, especially
+The main purpose for creating this website was to deliver a game that everyone will enjoy. This could be a demanding task nowadays, especially
 when we have an unlimited access to the digital world of sophisticated  and graphically involved games. Although **Whiff-Whaff** can be considered as very basic 
 and not complicated, however, it does not mean that simplicity can be boring. Playing this game demands swift reactions and even though it seems to be an easy task 
 to do, the play itself can be a relatively competitive challenge. My main aim and foremost priority was to give the users some good time. 
@@ -40,11 +40,11 @@ I used [**Balsamiq**](https://balsamiq.com/) to create the **wireframes** and to
 They can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/blob/master/wireframes/wireframes.pdf).
 
 ## Features
-1. The main section contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!**. The background-color has been applied
-to the body's element, to make it 'eye-catching'. There are two buttons called **HOW TO PLAY?** and **START**. The **HOW TO PLAY BUTTON** once clicked/tapped opens a modal 
+1. The website contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!**. The background-color has been applied
+to the body's element, to make it 'eye-catching'. There are two buttons called **HOW TO PLAY?** and **START**. The **HOW TO PLAY?** button once clicked/tapped opens a modal 
 with a list of game tips. It is a short list of instructions explaining how to play the game and what needs to be done to score a point. 
-The **START GAME** button once used takes the user to actual gamefield where a round of **Ping-Pong** game takes place. There is also a button called **CLOSE GAME** which closes the 
-game and returns the user to main page. The user can go back to the game when **START GAME** button is used again. The buttons' background color changes when the *hover* is used. 
+The **START GAME** button once used takes the user to actual gamefield where a round of **Ping-Pong** game takes place. The playfield was built using **canvas** element.There is also a button called **CLOSE GAME** which closes the 
+game and returns the user to main page, however, the user can go back to the game when **START GAME** button is used again. The buttons' background color changes when the *hover* is used. 
 
 2. There are **Social-links** added into the website content which give the user opportunity to get some more info about the website designer:
 

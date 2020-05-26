@@ -4,7 +4,7 @@ cvs.width = 600;
 cvs.height = 300;
 
 /**
- * 
+ * Selects Start & Close buttons
  */
 const startButton = document.getElementById('openGame');
 const closeButton = document.getElementById('closeGame');
@@ -178,7 +178,6 @@ const resetBall = () => {
 startButton.onclick = function() {
     cvs.style.display = 'block';
 };
-
 /**
  * Closes the playfield and returns the user to intro page.
  */
