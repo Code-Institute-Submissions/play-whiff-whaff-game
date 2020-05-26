@@ -41,10 +41,10 @@ moves is more difficult.
 
 #### Testing Stories 
 
-1. I was advised by my mentor the background colors for individual elements I initially used should be more vivid. I decided 
+**1.** I was advised by my mentor the background colors for individual elements I initially used should be more vivid. I decided 
 to follow his suggestion and had changed it using [**Coolors**](https://coolors.co/) pallete. 
 
-2. It was suggested by one of the test-users that a **RESET GAME** button could be built in, so the game users would have a chance to 
+**2.** It was suggested by one of the test-users that a **RESET GAME** button could be built in, so the game users would have a chance to 
 re-start the game anytime they want and the game result will reset too. I decided to implement this feature in the future.
 
 
@@ -80,13 +80,13 @@ They icons' scale and the background color change when the user clicks/taps on t
 
 #### Bugs 
 
-1. I came across an issue related to the overflow on my website while creating it. I found the solution to debug it using 
+**1.** I came across an issue related to the overflow on my website while creating it. I found the solution to debug it using 
 [**Unicorn Revealer**](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln). 
 
-2. I was experiencing a problem with drawing and placing the **net** in the middle of the playfield. I managed to resolve this issue by testing
+**2.** I was experiencing a problem with drawing and placing the **net** in the middle of the playfield. I managed to resolve this issue by testing
 different function scenarios and finding the one which drew the net exactly where I wanted. 
 
-3. While validating my JavaScript code in [**JS Hint**](https://jshint.com/) I received the following warnings:
+**3.** While validating my JavaScript code in [**JS Hint**](https://jshint.com/) I received the following warnings:
 
 *   *const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)*
 *   *arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6')* - they do not affect the game functionality.

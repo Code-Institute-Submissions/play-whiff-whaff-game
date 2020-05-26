@@ -41,10 +41,11 @@ They can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/
 
 ## Features
 
-1. The website contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!**. The background-color has been applied
+**1.** The website contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!**. The background-color has been applied
 to the body's element, to make it 'eye-catching'. 
 
-2. There are three buttons created:
+
+**2.** There are three buttons created:
 
 * **HOW TO PLAY?** - this button opens a modal with a list of game tips. It is a short list of instructions explaining
 how to play the game and what needs to be done to score a point. The modal closes when the user clicks/taps anywhere outside the box.
@@ -58,30 +59,34 @@ how to play the game and what needs to be done to score a point. The modal close
 - the **START THE GAME** and **CLOSE THE GAME** buttons' display is set to **none** for the smaller devices between 319.98px width and 767.98px width.
 Media queries used to target these two buttons. 
 
-3.  The **canvas** element has been used to build the game board and to render 2D shapes. The game board features the following elements:
 
-* **playfield** created using drawing methods. It is divided in two fields by a net which helps to see the **Player1** (left side) and the **Player 2** 
-(computer - right side) locations;
+**3.** The **canvas** element has been used to build the game board and to render 2D shapes. The game board features the following elements:
 
-* **players** created using one of the canvas drawing methods with different colors applied, so the players can be easily recognised. 
+* **playfield** - created using drawing methods. It is divided in two fields by a net which helps to see the **Player1** (left side) and the **Player 2** 
+(computer - right side) locations.
+
+* **players** - created using one of the canvas drawing methods with different colors applied, so the players can be easily recognised. 
 Both **Player 1** and **Player 2** can move up and down to be able to hit the ball. Basic AI function has been added to control the 
-Player 2 (computer) movement. 
+Player 2 (computer) movement.
 
-* **net** built using a canvas drawing method with a vivid color applied to clearly show the Player 1 and Player 2 side of the playfield.
+* **net** - built using a canvas drawing method with a vivid color applied to clearly show the Player 1 and Player 2 side of the playfield.
 
-* **ball** created using a drawing method which moves from one side of the playfield to another when the player or the opponent bounces it back.
+* **ball** - created using a drawing method which moves from one side of the playfield to another when the player or the opponent bounces it back.
 The ball's speed depends on the number of hits. If the number of player's hits increases the ball's speed increments too.
-The collision detection function has been used, so the ball bounces back from the wall (if hit by a Player 1 or Player 2) within playfield area. 
+The collision detection function has been used, so the ball bounces back from the wall (if hit by a Player 1 or Player 2) within playfield area.
 
 * **score** - the number changes when the players score a point. Different colors been used to show either Player 1 or Player 2 number of points.  
 
-4. There are **Social-links** added into the website content which give the user opportunity to get some more info about the website designer:
+
+**4.** There are **Social-links** added into the website content which give the user opportunity to get some more info about the website designer:
 
 *   both [**LinkedIn**](https://www.linkedin.com/in/kris-kempa-77a752162/) and [**GitHub**](https://github.com/KrisK1978) are active and take the user to external websites;
 
 *   **Instagram** and **Twitter** icons embedded just for visual effect.
 
-3. The **copyright** text added below the social-links icons to confirm who created the website and when it was built. 
+
+**5.** The **copyright** text added below the social-links icons to confirm who created the website and when it was built. 
+
 
 
 
