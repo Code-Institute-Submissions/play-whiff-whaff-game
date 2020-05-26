@@ -1,7 +1,7 @@
 const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
-cvs.width = 380;
-cvs.height = 250;
+cvs.width = 600;
+cvs.height = 300;
 /**
  * Selects Start & Close buttons which opens and closes the game.
  */
@@ -14,7 +14,7 @@ const ping = {
     x: 0,
     y: cvs.height/2 - 100/2,
     width: 20,
-    height: 80, 
+    height: 100, 
     color: '#fde74c',
     score: 0
 };
@@ -22,14 +22,14 @@ const pong = {
     x: cvs.width - 20,
     y: cvs.height/2 - 100/2,
     width: 20,
-    height: 80, 
+    height: 100, 
     color: '#7a00f3',
     score: 0
 };
 const ball = {
     x: cvs.width/2,
     y: cvs.height/2,
-    radius: 10,
+    radius: 15,
     speed: 5,
     velocityX: 5, 
     velocityY: 5,
@@ -95,8 +95,8 @@ const drawGameNet = () => {
 let drawGameElements = () => {
     drawPlayField(0, 0, cvs.width, cvs.height, '#38cabd');
     drawBall(ball.x, ball.y, ball.radius, ball.color);
-    drawScore(ping.score, cvs.width/5, cvs.height/6, '#fdfffc');
-    drawScore(pong.score, 3*cvs.width/4, cvs.height/6,'#641220');
+    drawScore(ping.score, cvs.width/4, cvs.height/8, '#fdfffc');
+    drawScore(pong.score, 3*cvs.width/4, cvs.height/8,'#641220');
     drawPlayerOne();
     drawPlayerTwo();
     drawGameNet();
