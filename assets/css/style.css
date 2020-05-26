@@ -3,7 +3,8 @@
 
 /*STYLING HTML/BODY & HEADINGS & PARAGRAPH*/
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -15,9 +16,11 @@ html {
 }
 
 body {
+    display: -ms-grid;
     display: grid;
     text-align: center;
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     justify-items: center;
     background-color: #c2fe55;
     font-family: 'Inconsolata', monospace;
@@ -55,16 +58,21 @@ p {
 
 /*CANVAS STYLING*/
 #gameCanvas {
+    display: none;
     border: 0.5rem solid #ff489f;
-    margin: 2rem 1.5rem;
+    margin: 0.8rem 0.5rem;
 }
 
 /*STYLING HOW TO PLAY MODAL*/
 #howToPlayModal {
     display: none;
     position: fixed;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 7rem;
     width: 100%;
     height: 100%;
@@ -81,8 +89,10 @@ p {
     padding: 0;
     margin: auto;
     border: 0.2rem solid #d81a31;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+            animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
 }
 
 /*STYLING MODAL ANIMATION*/
@@ -105,6 +115,8 @@ p {
 
 /*STYLING GAME HOW TO PLAY/OPEN/CLOSE BUTTONS*/
 .game-buttons a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     font-size: 2rem; 
     font-weight: 700;
@@ -173,5 +185,4 @@ p {
     color: #560c03;
     margin: 0.5rem;
 }
-
 
