@@ -55,7 +55,6 @@ p {
 
 /*CANVAS STYLING*/
 #gameCanvas {
-    display: none;
     border: 0.5rem solid #ff489f;
     margin: 2rem 1.5rem;
 }
