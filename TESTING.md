@@ -17,9 +17,10 @@ validation services to check the project's content. The following tools were use
 
 I knew my project needed to be fully responsive but I was aware it can be difficult to achieve that using a canvas element. 
 I decided to take a slightly different approach and inform the user that the game functionality can be fully achieved using
-devices with higher resolution i.e. laptops/desktops. This is also because I used **mousemove** event to control player's 
+devices with bigger screens i.e. iPads/laptops/desktops. This is also because I used **mousemove** event to control player's 
 moves which works efficiently on these devices. The game can be still played on the smaller devices but controlling the player's 
-moves is more difficult.
+moves is more difficult. Both **START THE GAME** and **CLOSE THE GAME** buttons are hidden if the user using smaller devices
+(between the min-width of 319.98px and max-width of 767.98px). 
 
 ### User Stories
 
@@ -60,12 +61,13 @@ which can be
 This was implemented to ensure the user will not be confused with how the game should be played. The modal closes when the user clicks/taps
 anywhere outside the box. There is a small print text added which notifies the user how the modal can be closed. 
 
-* **START** button - once clicked/tapped, it opens the actual game playfield and the user can enjoy a round of **Ping-Pong**.
+* **START THE GAME** button - once clicked/tapped, it opens the actual game playfield and the user can enjoy a round of **Ping-Pong**.
+
+* **CLOSE THE GAME** button - the user can click/tap on the button which closes the game completely and brings the user back to the intro page. 
+The button is not active on the intro page and can be used once the user moves to actual game playfield.
 
 * **Playfield** - the user is able to move the paddle up and down to hit the ball and score the point. The user notices the speed of the ball increases
 with the number of the hits. The user can see the score changes once the point is earned. 
-
-* **CLOSE** button - the user can click/tap on the button which closes the game completely and brings the user back to the intro page. 
 
 * **Social-Links** icons - the user can access an additional information about the designer by using the following icons:
 

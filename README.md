@@ -56,8 +56,8 @@ how to play the game and what needs to be done to score a point. The modal close
 
 **Additional buttons' details:**
 - the buttons' background color changes when the **hover** selector is used. 
-- the **START THE GAME** and **CLOSE THE GAME** buttons' display is set to **none** for the smaller devices between 319.98px width and 767.98px width.
-Media queries used to target these two buttons. 
+- the **START THE GAME** and **CLOSE THE GAME** buttons' display is set to **none** for the smaller devices between 
+min-width of 319.98px width and max-width of 767.98px width. Media queries were used to target these two buttons. 
 
 
 **3.** The **canvas** element has been used to build the game board and to render 2D shapes. The game board features the following elements:
@@ -101,6 +101,7 @@ once clicked on the button/tab called **Check The Leaderboard**.
 each time a point is scored. 
 
 ## Technologies used 
+
 I have used the following technologies to complete the project:
 1. ### HTML
    
