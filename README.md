@@ -8,15 +8,16 @@ The point is scored when the player fails to return the ball. It seems to be an 
 The main purpose for creating this website was to deliver a game that everyone will enjoy. This could be a demanding task nowadays, especially
 when we have an unlimited access to the digital world of sophisticated and graphically involved games. Although **Whiff-Whaff** can be considered as very basic 
 and not complicated, however, it does not mean that simplicity can be boring. Playing this game demands swift reactions and even though it seems to be an easy task 
-to do, the play itself can be a relatively competitive challenge. My main aim and foremost priority was to give the users some good time. 
+to do, the play itself can be a relatively competitive challenge. Basically my main aim and foremost priority was to give the users some good time. 
 
 ### Designer's strategy
+
 * to design a basic but enjoyable game for everyone;
 
-* to keep the text content to minimum, so the website user is not overwhelmed with it and simply does not lose interest;
+* to keep the text content to minimum, so the user is not overwhelmed with it and simply does not lose interest;
 
 ### Design elements
-*   a color pallete has been used to the specific elements (body, canvas, etc.) of the project to achieve an *'eye-catching'* effect;
+*   a color pallete has been used to the specific elements (body, canvas, buttons, playfield elements, text, etc.) of the project to achieve an *'eye-catching'* effect;
     
     <img src="wireframes/color-pallete/body.png" alt="body">
     
@@ -29,6 +30,11 @@ to do, the play itself can be a relatively competitive challenge. My main aim an
     <img src="wireframes/color-pallete/net.png" alt="net">
 
     <img src="wireframes/color-pallete/ball.png" alt="ball">
+
+    <img src="wireframes/color-pallete/warning.png" alt="warning">
+
+    <img src="wireframes/color-pallete/text.png" alt="text">
+
 
         
 *   a single-type of font [**Inconsolata**](https://fonts.google.com/specimen/Inconsolata?query=) 
@@ -57,16 +63,18 @@ how to play the game and what needs to be done to score a point. The modal close
 
 * **START THE GAME** - this button takes the user to actual playfield where a round of **Ping-Pong** takes place.
 
-* **CLOSE THE GAME** - this button closes the game and returns the user to intro page. 
+* **CLOSE THE GAME** - this button closes the game and returns the user to intro page. It is not active on the intro page and can be used
+once the user enters the playfield using **START THE GAME** button. 
 
-**Additional buttons' details:**
+    **Additional buttons' details:**
 
-- the buttons' background color changes when the **hover** selector is used. 
+    - the buttons' background color changes when the **hover** selector is used. 
 
-- the **HOW TO PLAY**, **START THE GAME** and **CLOSE THE GAME** buttons' display is set to **none** for the smaller devices between 
-min-width of 319.98px width and max-width of 767.98px width. The **PLEASE READ!** button displays only on small screens 
-and its display is set to **none** if the minimum width of 768px is reached. Media queries were used to target these buttons. 
+    - the **HOW TO PLAY**, **START THE GAME** and **CLOSE THE GAME** buttons' display is set to **none** for the smaller devices between 
+    min-width of 319.98px width and max-width of 767.98px width. The **PLEASE READ!** button displays only on small screens 
+    and its display is set to **none** if the minimum width of 768px is reached. Media queries were used to target these buttons. 
 
+    - the game can be refreshed using reloading the page again.
 
 **4.** The **canvas** element has been used to build the game board and to render 2D shapes. The game board features the following elements:
 

@@ -77,6 +77,8 @@ The button is not active on the intro page and can be used once the user moves t
     * the **HOW TO PLAY?**, **START THE GAME** and **CLOSE THE GAME** buttons can be seen by the user only if bigger screen devices are used.
     The user is unable to see the buttons if using a small device as their display is set to **none**.
 
+    * the user can refresh the game by reloading the page again. 
+
 * **Playfield** - the user is able to move the paddle up and down to hit the ball and score the point. The user notices the speed of the ball increases
 with the number of the hits. The user can see the score changes once the point is earned. 
 

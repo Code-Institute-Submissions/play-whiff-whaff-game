@@ -182,7 +182,7 @@ closeButton.onclick = () => {
     cvs.style.display = 'none';
 };
 /*
- * Bring all game elements and starts the game.
+ * Brings all game elements and starts the game.
  */
 let playGame = () => {
     drawGameElements();
