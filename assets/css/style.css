@@ -102,6 +102,7 @@ h3 {
     from {top: -25rem; opacity: 0}
     to {top: 0; opacity: 1}
 }
+
 /*STYLING WARNING AND HOW TO PLAY TIPS LIST CONTENT*/
 .how-to-play-tips li {
     font-size: 1.8rem; 
@@ -116,12 +117,14 @@ h3 {
     font-weight: 700;
     margin: 1.5rem 2rem;
 }
+
 /*STYLING WARNING ICON*/
 .far {
     font-size: 10rem;
     color: #ff0000;
     margin-top: 2rem;
 }
+
 /*ADDING STYLE TO CLOSE MODAL TEXT*/
 .close-modal-info,
 .close-warning-modal {
@@ -129,7 +132,8 @@ h3 {
     color: #1d44b0;
     margin: 1rem;
 }
-/*STYLING GAME HOW TO PLAY/OPEN/CLOSE BUTTONS*/
+
+/*STYLING HOW TO PLAY/OPEN THE GAME/CLOSE THE GAME BUTTONS*/
 #userWarning {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -166,6 +170,7 @@ h3 {
     font-weight: 700;
     margin: 0;
 }
+
 .game-buttons a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -194,7 +199,6 @@ h3 {
     background-color: #e8653f;
     border: 0.3rem solid #cae1f2;
 }
-
 #closeGame {
     color: #c9172b;
     background-color: #00ff00;
@@ -246,7 +250,7 @@ h3 {
        display: none;
     }
  }
-
+ 
 /*HIDING THE WARNING MESSAGE BUTTON ON BIGGER DEVICES*/
 @media (min-width: 768px) {
     #userWarning {

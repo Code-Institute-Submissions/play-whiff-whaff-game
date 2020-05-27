@@ -130,7 +130,7 @@ let ballBounce = (b, p) => {
 /**
  * Updates player's position/score/ball's speed & resets the ball.
  */
-updateGameElements = () => {
+let updateGameElements = () => {
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
