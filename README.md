@@ -202,8 +202,6 @@ The content of the website was written by me.
 I used the following platforms to help to understand, plan, design and create part of the project.
 * [**Traversy Media**](https://www.traversymedia.com/)
 
-* [**Code Explained**](https://www.codeexplained.org/)
-
 * [**Web Dev Simplified**](https://blog.webdevsimplified.com/)
 
 * [**Fort Hill CSC**](https://www.forthillcsc.co.uk/)
