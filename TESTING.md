@@ -31,15 +31,15 @@ only on small devices and is hidden if the screen min-width reaches 768px and mo
 
     - the user can smoothly navigate through website and find what is looking for;
     - the user will not feel overwhelmed with a volume of the information as it was the designer's 
-    intention to keep the text content to minimum
+    intention to keep the text content to minimum.
 
 * As a new user, I am hoping to enjoy the game
     - the simplicity of the game will be its biggest value as there is no complicated set of game rules which 
-    could make the player confused
+    could make the player confused.
 
 * As a new user, I want to connect with the website host using the available social-media links;
     - the available social-media links are active and once an icon is clicked/tapped it will take the user 
-    to the external websites where the information about the website's host can be found
+    to the external websites where the information about the website's host can be found.
 
 #### Testing Stories 
 
@@ -53,8 +53,8 @@ re-start the game anytime they want and the game result will reset too. I decide
 ### Features testing
 
 When the user visits the page for the first time she/he will be presented with a vivid background color which attracts user's attention
-but it is not aggressive. The users will notice a limited text content was embedded which makes the website's experience less overwhelming
-which can be 
+but it is not aggressive. The users will notice a limited text content was embedded which makes the general experience less overwhelming
+and more user-friendly. 
 
 #### Elements tested:
 
@@ -77,7 +77,7 @@ The button is not active on the intro page and can be used once the user moves t
     * the **HOW TO PLAY?**, **START THE GAME** and **CLOSE THE GAME** buttons can be seen by the user only if bigger screen devices are used.
     The user is unable to see the buttons if using a small device as their display is set to **none**.
 
-    * the user can refresh the game by reloading the page again. 
+    * the user can refresh the game by reloading the page. 
 
 * **Playfield** - the user is able to move the paddle up and down to hit the ball and score the point. The user notices the speed of the ball increases
 with the number of the hits. The user can see the score changes once the point is earned. 

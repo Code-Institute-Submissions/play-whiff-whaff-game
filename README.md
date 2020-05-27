@@ -1,4 +1,4 @@
-<img src="wireframes/readme-image"/>alt="responsive">
+<img src="wireframes/readme-image/responsive.png" alt="responsive">
 
 **Ping - Pong** also known as **Whiff-Whaff** is a table tennis game where two or four players hit a lightweight ball back an forth across a table divided with a net. 
 Players use small rackets and must allow a ball played toward them to bounce one time on their side of the table. They must hit it back to the opposite side. 
@@ -74,7 +74,7 @@ once the user enters the playfield using **START THE GAME** button.
     min-width of 319.98px width and max-width of 767.98px width. The **PLEASE READ!** button displays only on small screens 
     and its display is set to **none** if the minimum width of 768px is reached. Media queries were used to target these buttons. 
 
-    - the game can be refreshed using reloading the page again.
+    - the game can be refreshed by reloading the website.
 
 **4.** The **canvas** element has been used to build the game board and to render 2D shapes. The game board features the following elements:
 
