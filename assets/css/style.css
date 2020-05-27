@@ -110,12 +110,25 @@ h3 {
     margin: 1rem 2.5rem;
 }
 
-.close-modal-info {
+.close-modal-info,
+.close-warning-modal {
     font-size: 1.5rem;
     color: #1d44b0;
     margin: 1rem;
 }
 
+.warning-modal-info {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.far {
+    font-size: 10rem;
+    color: #ff0000;
+    margin-top: 2rem;
+}
 /*STYLING GAME HOW TO PLAY/OPEN/CLOSE BUTTONS*/
 #userWarning {
     display: -webkit-inline-box;
