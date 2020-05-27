@@ -60,7 +60,7 @@ h3 {
 
 /*STYLING HOW TO PLAY MODAL*/
 #howToPlayModal,
-#warningModal {
+#warningUserModal {
     display: none;
     position: fixed;
     -webkit-box-pack: center;
@@ -69,7 +69,7 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 7rem;
+    padding-top: 5rem;
     width: 100%;
     height: 100%;
     overflow: scroll;
@@ -130,27 +130,40 @@ h3 {
     padding: 3rem;
     border-radius: 0.8rem;
     margin: 0.5rem;
+    cursor: pointer;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
    -o-transition: all .4s ease-in-out;
 }
+
+#userWarning:hover {
+    color: #5200cf;
+    background-color: #17ffce;
+    border: 0.3rem solid #c41455;
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
+}
+
 .game-menu {
     text-decoration: underline;
-    color: #0f7858;
-    font-size: 2.5rem;
+    color: #641220;
+    font-size: 2rem;
     font-weight: 700;
+    margin: 0;
 }
 .game-buttons a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    font-size: 2rem; 
+    font-size: 1.8rem; 
     font-weight: 700;
     text-decoration: none;
-    padding: 0.7rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
-    margin: 1rem 0.8rem;
+    margin: 1.5rem 0.8rem;
+    cursor: pointer;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
@@ -190,6 +203,7 @@ h3 {
     border-radius: 0.5rem;
     margin-top: 2rem;
     padding: 0.4rem;
+    cursor: pointer;
     transition: all .4s ease-in-out;
    -moz-transition: all .4s ease-in-out;
    -webkit-transition: all .4s ease-in-out;
