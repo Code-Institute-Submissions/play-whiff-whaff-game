@@ -50,7 +50,8 @@ They can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/
 **1.** The website contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!**. The background-color has been applied
 to the body's element, to make it 'eye-catching'. 
 
-**2.** **GAME MENU** text appears only on bigger devices with the game buttons, except of **PLEASE READ!**. Its display is set to **none** if the user 
+**2.** **GAME MENU** text appears only on bigger devices with the game buttons, except of **PLEASE READ!**. Its display is set to **none** if the user wants to use a smaller
+device to play the game. 
 
 **3.** There are four buttons created:
 
