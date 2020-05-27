@@ -74,7 +74,7 @@ once the user enters the playfield using **START THE GAME** button.
     min-width of 319.98px width and max-width of 767.98px width. The **PLEASE READ!** button displays only on small screens 
     and its display is set to **none** if the minimum width of 768px is reached. Media queries were used to target these buttons. 
 
-    - the game can be refreshed by reloading the website.
+    - the game can be reloaded by refreshing the website.
 
 **4.** The **canvas** element has been used to build the game board and to render 2D shapes. The game board features the following elements:
 
@@ -102,8 +102,6 @@ The collision detection function has been used, so the ball bounces back from th
 
 
 **6.** The **copyright** text added below the social-links icons to confirm who created the website and when it was built. 
-
-
 
 
 
