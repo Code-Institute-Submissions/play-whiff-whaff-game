@@ -18,8 +18,8 @@ validation services to check the project's content. The following tools were use
 I knew my project needed to be fully responsive but I was aware it can be difficult to achieve that using a canvas element. 
 I decided to take a slightly different approach and inform the user that the game functionality can be fully achieved using
 devices with bigger screens i.e. iPads/laptops/desktops. I created a warning message button called **PLEASE READ!** which 
-display a warning message to the user.  This is also because I used **mousemove** event to control player's 
-moves which works efficiently on these devices. The **GAME MENU**, **START THE GAME** and **CLOSE THE GAME** buttons are hidden 
+displays a warning message to the user. I also took this approach due to the fact I used a **mousemove** event to control player's 
+moves. It works efficiently on bigger screen devices. The **GAME MENU**, **START THE GAME** and **CLOSE THE GAME** buttons are hidden 
 if the user using smaller devices (between the min-width of 319.98px and max-width of 767.98px). The **PLEASE READ!** button displays
 only on small devices and is hidden if the screen min-width reaches 768px and more.
 
@@ -62,7 +62,8 @@ which can be
 box contains a message informing the user the game best functionality can be seen using bigger screen devices. It also warns the user that 
 if a small device is used there can be a limited access to the game. 
 
-* **GAME MENU** - text only appears when the user accessing website using small screen devices. Text appears when bigger scree devices are used.
+* **GAME MENU** - the user can only see the embedded text if bigger screen devices are used. It disappears when the user is accessing website 
+using small screen devices. 
 
 * **HOW TO PLAY?** button - when the user clicks/taps the button, it opens a modal which contains a list of the game tips/suggestions.
 This was implemented to ensure the user will not be confused with how the game should be played. The modal closes when the user clicks/taps
@@ -72,6 +73,9 @@ anywhere outside the box. There is a small print text added which notifies the u
 
 * **CLOSE THE GAME** button - the user can click/tap on the button which closes the game completely and brings the user back to the intro page. 
 The button is not active on the intro page and can be used once the user moves to actual game playfield.
+
+    * the **HOW TO PLAY?**, **START THE GAME** and **CLOSE THE GAME** buttons can be seen by the user only if bigger screen devices are used.
+    The user is unable to see the buttons if using a small device as their display is set to **none**.
 
 * **Playfield** - the user is able to move the paddle up and down to hit the ball and score the point. The user notices the speed of the ball increases
 with the number of the hits. The user can see the score changes once the point is earned. 
