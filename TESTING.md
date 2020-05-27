@@ -17,7 +17,7 @@ validation services to check the project's content. The following tools were use
 
 I knew my project needed to be fully responsive but I was aware it can be difficult to achieve that using a canvas element. 
 I decided to take a slightly different approach and inform the user that the game functionality can be fully achieved using
-devices with bigger screens i.e. iPads/laptops/desktops. I created a warning message button called **PLEASE READ!** which 
+devices with bigger screens i.e. iPads/tablets/laptops/desktops. I created a warning message button called **PLEASE READ!** which 
 displays a warning message to the user. I also took this approach due to the fact I used a **mousemove** event to control player's 
 moves. It works efficiently on bigger screen devices. The **GAME MENU**, **START THE GAME** and **CLOSE THE GAME** buttons are hidden 
 if the user using smaller devices (between the min-width of 319.98px and max-width of 767.98px). The **PLEASE READ!** button displays
