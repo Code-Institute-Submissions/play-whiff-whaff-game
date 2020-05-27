@@ -49,7 +49,8 @@ to the body's element, to make it 'eye-catching'.
 **3.** There are four buttons created:
 
 * **PLEASE READ!** - this button informs the user that the game should be played on bigger devices and its functionality can be limited 
-on mobile phone. The modal closes when the user clicks/taps anywhere outside the message box.
+on a mobile phone. There is an icon of a [**sad face**](https://fontawesome.com/icons?d=gallery&q=sad%20face) added prior to text message. 
+The modal closes when the user clicks/taps anywhere outside the message box.
 
 * **HOW TO PLAY?** - this button opens a modal with a list of game tips. It is a short list of instructions explaining
 how to play the game and what needs to be done to score a point. The modal closes when the user clicks/taps anywhere outside the box.
@@ -107,7 +108,7 @@ once clicked on the button/tab called **Check The Leaderboard**.
 3. I would like to add sound effects every time the player hits the ball and the ball touches the playfield walls. The sound effect would also be applied 
 each time a point is scored. 
 
-4. I would like to apply **canvas** resize the function, so the playfield can be resized to players' needs.
+4. I would like to apply **canvas** resize function, so the playfield can be resized to players' needs.
 
 ## Technologies used 
 

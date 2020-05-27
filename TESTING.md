@@ -17,10 +17,11 @@ validation services to check the project's content. The following tools were use
 
 I knew my project needed to be fully responsive but I was aware it can be difficult to achieve that using a canvas element. 
 I decided to take a slightly different approach and inform the user that the game functionality can be fully achieved using
-devices with bigger screens i.e. iPads/laptops/desktops. This is also because I used **mousemove** event to control player's 
-moves which works efficiently on these devices. The game can be still played on the smaller devices but controlling the player's 
-moves is more difficult. Both **START THE GAME** and **CLOSE THE GAME** buttons are hidden if the user using smaller devices
-(between the min-width of 319.98px and max-width of 767.98px). 
+devices with bigger screens i.e. iPads/laptops/desktops. I created a warning message button called **PLEASE READ!** which 
+display a warning message to the user.  This is also because I used **mousemove** event to control player's 
+moves which works efficiently on these devices. The **GAME MENU**, **START THE GAME** and **CLOSE THE GAME** buttons are hidden 
+if the user using smaller devices (between the min-width of 319.98px and max-width of 767.98px). The **PLEASE READ!** button displays
+only on small devices and is hidden if the screen min-width reaches 768px and more.
 
 ### User Stories
 
@@ -56,6 +57,12 @@ but it is not aggressive. The users will notice a limited text content was embed
 which can be 
 
 #### Elements tested:
+
+* **PLEASE READ!** button - appears on small screen devices. When the user clicks/taps the button a warning message modal opens. The message 
+box contains a message informing the user the game best functionality can be seen using bigger screen devices. It also warns the user that 
+if a small device is used there can be a limited access to the game. 
+
+* **GAME MENU** - text only appears when the user accessing website using small screen devices. Text appears when bigger scree devices are used.
 
 * **HOW TO PLAY?** button - when the user clicks/taps the button, it opens a modal which contains a list of the game tips/suggestions.
 This was implemented to ensure the user will not be confused with how the game should be played. The modal closes when the user clicks/taps
