@@ -92,7 +92,7 @@ const drawGameNet = () => {
 /**
  * Creates all game elements - play-field, players, ball, net, score.
  */ 
-let drawGameElements = () => {
+const drawGameElements = () => {
     drawPlayField(0, 0, cvs.width, cvs.height, '#38cabd');
     drawBall(ball.x, ball.y, ball.radius, ball.color);
     drawScore(ping.score, cvs.width/4, cvs.height/8, '#fdfffc');
@@ -115,7 +115,7 @@ function controlMove(e) {
 /**
  * The ball bounces back when hits the playfield walls  
  */
-let ballBounce = (b, p) => {
+const ballBounce = (b, p) => {
     b.top = b.y - b.radius;
     b.bottom = b.y + b.radius;
     b.left = b.x - b.radius;
@@ -130,7 +130,7 @@ let ballBounce = (b, p) => {
 /**
  * Updates player's position/score/ball's speed & resets the ball.
  */
-let updateGameElements = () => {
+const updateGameElements = () => {
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
@@ -165,7 +165,7 @@ let updateGameElements = () => {
 /**
  * Resets the ball.
  */
-let resetBall = () => {
+const resetBall = () => {
         ball.x = cvs.width/2;
         ball.y = cvs.height/2;
         ball.speed = 5;
@@ -184,7 +184,7 @@ closeButton.onclick = () => {
 /*
  * Brings all game elements and starts the game.
  */
-let playGame = () => {
+const playGame = () => {
     drawGameElements();
     updateGameElements();
 };
