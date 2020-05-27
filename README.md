@@ -44,8 +44,12 @@ They can be found [**here**](https://github.com/KrisK1978/play-whiff-whaff-game/
 **1.** The website contains intro text **Welcome to the World of Arcade Games!'** and subtext **We present you a Ping-Pong game!**. The background-color has been applied
 to the body's element, to make it 'eye-catching'. 
 
+**2.** **GAME MENU** text appears only on bigger devices with the game buttons, except of **PLEASE READ!**. Its display is set to **none** if the user 
 
-**2.** There are three buttons created:
+**3.** There are four buttons created:
+
+* **PLEASE READ!** - this button informs the user that the game should be played on bigger devices and its functionality can be limited 
+on mobile phone. The modal closes when the user clicks/taps anywhere outside the message box.
 
 * **HOW TO PLAY?** - this button opens a modal with a list of game tips. It is a short list of instructions explaining
 how to play the game and what needs to be done to score a point. The modal closes when the user clicks/taps anywhere outside the box.
@@ -58,11 +62,12 @@ how to play the game and what needs to be done to score a point. The modal close
 
 - the buttons' background color changes when the **hover** selector is used. 
 
-- the **START THE GAME** and **CLOSE THE GAME** buttons' display is set to **none** for the smaller devices between 
-min-width of 319.98px width and max-width of 767.98px width. Media queries were used to target these two buttons. 
+- the **HOW TO PLAY**, **START THE GAME** and **CLOSE THE GAME** buttons' display is set to **none** for the smaller devices between 
+min-width of 319.98px width and max-width of 767.98px width. The **PLEASE READ!** button displays only on small screens 
+and its display is set to **none** if the minimum width of 768px is reached. Media queries were used to target these buttons. 
 
 
-**3.** The **canvas** element has been used to build the game board and to render 2D shapes. The game board features the following elements:
+**4.** The **canvas** element has been used to build the game board and to render 2D shapes. The game board features the following elements:
 
 * **playfield** - created using drawing methods. It is divided in two fields by a net which helps to see the **Player1** (left side) and the **Player 2** 
 (computer - right side) locations.
@@ -80,14 +85,14 @@ The collision detection function has been used, so the ball bounces back from th
 * **score** - the number changes when the players score a point. Different colors been used to show either Player 1 or Player 2 number of points.  
 
 
-**4.** There are **Social-links** added into the website content which give the user opportunity to get some more info about the website designer:
+**5.** There are **Social-links** added into the website content which give the user opportunity to get some more info about the website designer:
 
 *   both [**LinkedIn**](https://www.linkedin.com/in/kris-kempa-77a752162/) and [**GitHub**](https://github.com/KrisK1978) are active and take the user to external websites;
 
 *   **Instagram** and **Twitter** icons embedded just for visual effect.
 
 
-**5.** The **copyright** text added below the social-links icons to confirm who created the website and when it was built. 
+**6.** The **copyright** text added below the social-links icons to confirm who created the website and when it was built. 
 
 
 
@@ -101,6 +106,8 @@ once clicked on the button/tab called **Check The Leaderboard**.
 
 3. I would like to add sound effects every time the player hits the ball and the ball touches the playfield walls. The sound effect would also be applied 
 each time a point is scored. 
+
+4. I would like to apply **canvas** resize the function, so the playfield can be resized to players' needs.
 
 ## Technologies used 
 
