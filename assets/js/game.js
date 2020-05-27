@@ -2,14 +2,8 @@ const cvs = document.getElementById('gameCanvas');
 const ctx = cvs.getContext('2d');
 cvs.width = 600;
 cvs.height = 300;
-/**
- * Selects Start & Close buttons which opens and closes the game.
- */
 const startButton = document.getElementById('openGame');
 const closeButton = document.getElementById('closeGame');
-/**
- * Declares game elements: Player 1(ping), Player 2(pong), game ball and game net.
- */
 const ping = {
     x: 0,
     y: cvs.height/2 - 100/2,
@@ -42,6 +36,7 @@ const gameNet = {
     height: 10,
     color: '#ff489f'
 };
+const framePerSecond = 50;
 /**
  * Draws the playfield where the game of Ping-Pong takes place.
  */
@@ -128,7 +123,7 @@ const ballBounce = (b, p) => {
     b.top < p.bottom;
 };
 /**
- * Updates player's position/score/ball's speed & resets the ball.
+ * Updates player's position/score and resets the ball to initial speed.
  */
 const updateGameElements = () => {
     ball.x += ball.velocityX;
@@ -188,6 +183,4 @@ const playGame = () => {
     drawGameElements();
     updateGameElements();
 };
-const framePerSecond = 50;
 setInterval(playGame, 1000/framePerSecond);
-
